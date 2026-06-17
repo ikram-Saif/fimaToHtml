@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/Logo(1).png" alt="Logo">
+                </a>
+
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible Content -->
+                <div class="collapse navbar-collapse" id="navbarScroll">
+
+                    <!-- Search -->
+                    <form class="d-flex navbar-search mx-auto">
+                        <input class="form-control search-input" type="search" placeholder="Search for anything...">
+                        <button class="search-btn bg-white border-0 px-3" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+
+                    <!-- Switch -->
+                    <div class="form-check form-switch custom-switch navbar-switch">
+                        <input class="form-check-input" type="checkbox" id="vatSwitch" checked>
+                        <label class="form-check-label" for="vatSwitch">Vat</label>
+                    </div>
+
+                    <!-- Icons -->
+                    <ul class="navbar-nav d-flex flex-row gap-4 icon-menu white ms-lg-3">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link white"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link white"><i class="fa-regular fa-heart"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link white"><i class="fa-regular fa-user"></i></a>
+                        </li>
+                    </ul>
+
+                </div><!-- /.navbar-collapse -->
+
+            </div><!-- /.container-fluid -->
+
+        </nav>
+
+    </header>
+    <section class="main-menu-section">
+    <div class="container-fluid d-flex align-items-center justify-content-between gap-2 main-menu">
+
+        <ul class="d-flex align-items-center gap-3 gap-lg-5 flex-wrap mb-0 ps-0">
+            <li>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        All Categories
+                        <i class="fa-solid fa-chevron-down ms-2 arrow"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Insulation Boards</a></li>
+                        <li><a class="dropdown-item" href="#">Timber</a></li>
+                        <li class="dropdown-submenu">
+                           
+                             <a class="dropdown-item dropdown-toggle" href="#"> 
+                                 
+                                Insulation Boards  <i class="fa-solid fa-chevron-right submenu-arrow"></i></a>
+                            
+                            <ul class="sub-menu">
+                                <li><a class="dropdown-item" href="#">All</a></li>
+                                <li><a class="dropdown-item" href="#">Insulation Boards</a></li>
+                                <li><a class="dropdown-item" href="#">Insulation Slabs</a></li>
+                                <li><a class="dropdown-item" href="#">Insulation Rolls</a></li>
+                                <li><a class="dropdown-item" href="#">Material Type</a></li>
+                                <li><a class="dropdown-item" href="#">Applications</a></li>
+                                <li><a class="dropdown-item" href="#">Insulation Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Insulation Slabs</a></li>
+                        <li><a class="dropdown-item" href="#">Plasterboard</a></li>
+                        <li><a class="dropdown-item" href="#">Sheet Materials</a></li>
+                        <li><a class="dropdown-item" href="#">Doors</a></li>
+                        <li><a class="dropdown-item" href="#">Roofing</a></li>
+                        <li><a class="dropdown-item" href="#">Insulation Slabs</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <!-- Hide text labels on small screens, keep icons -->
+            <li>
+                <a href="#"><i class="fa-solid fa-location-dot"></i>
+                <span class="menu-label">Track Order</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-regular fa-comment"></i>
+                <span class="menu-label">Live Chat</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-solid fa-circle-info"></i>
+                <span class="menu-label">Need Help?</span></a>
+            </li>
+        </ul>
+
+        <div class="phone d-none d-sm-flex align-items-center gap-2">
+            <i class="fa-solid fa-phone"></i>
+            <span>+1-202-555-0104</span>
+        </div>
+
+    </div>
+</section>
+
+   <section class="hero container-fluid">
+
+    <div class="row g-3">
+
+        <!-- LEFT BIG CARD -->
+        <div class="col-lg-8 col-sm-12">
+
+            <div class="hero-main">
+
+                <div class="hero-content">
+
+                    <span class="hero-tag">
+                        -THE SMART WAY TO BUILD
+                    </span>
+
+                    <h1>
+                        Construction<br>
+                        Materials<br>
+                        Marketplace
+                    </h1>
+
+                    <p>
+                        Get competitive quotes from trusted suppliers.
+                        Order construction materials, compare offers,
+                        and track deliveries.
+                    </p>
+
+                    <a class="btn btn-warning-md">
+                        SHOP NOW →
+                    </a>
+
+                </div>
+
+                <img
+                    src="assets/images/man.png"
+                    class="worker">
+
+                <img
+                    src="assets/images/Rectangle 5.png"
+                    class="house">
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT COLUMN -->
+        <div class="col-lg-4 col-sm-12">
+
+            <div class="d-flex flex-column gap-3 h-100">
+
+                <div class="promo-card">
+
+                    <div class="">
+                        <small>Premium Quality</small>
+
+                        <h2>
+                            Fast & safe<br>
+                            delivery
+                        </h2>
+
+                        <button class="btn btn-warning-sm">
+                           Shop Now →
+                        </button>
+                    </div>
+
+                    <img src="assets/images/Rectangle6.png">
+
+                    <img class = "second-img" src="assets/images/truck.png" alt="">
+
+                </div>
+
+
+                <div class="promo-card">
+
+                    <div>
+                        <small>Build Smarter</small>
+
+                        <h2>
+                            Premium<br>
+                            Construction<br>
+                            Materials
+                        </h2>
+
+                        <button class="btn btn-warning-sm">
+                            Shop Now →
+                        </button>
+                    </div>
+
+                    <img src="assets/images/Rectangle7.png">
+                    <img class = "third-img" src="assets/images/rock.png"/>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class = "container-fluid">
+   <div class="feature">
+    <div class="row">
+         <div class="ccol-12 col-sm-6 col-lg-3 d-flex align-items-center one">
+       
+        <div class="d-flex gap-4 align-items-center two">
+            <img class="" src="assets/images/icone/Package.png" alt ="package" />
+
+            <div class = "flex flex-colum gap-1">
+                <h3>Fasted Delivery</h3>
+                <p>Delivery in 24/H</p>
+            </div>
+        </div>
+        <div class="line">
+
+        </div>
+        
+    </div>
+     <div class="col-12 col-sm-6 col-lg-3 d-flex align-items-center one">
+       
+        <div class="d-flex gap-4 align-items-center two">
+            <img class="" src="assets/images/icone/Trophy.png" alt ="package" />
+
+            <div class = "flex flex-column gap-1">
+                <h3>24 Hours Return</h3>
+                <p>100% money-back guarantee</p>
+            </div>
+        </div>
+        <div class="line">
+
+        </div>
+        
+    </div>
+     <div class="col-12 col-sm-6 col-lg-3 d-flex align-items-center one">
+       
+        <div class="d-flex gap-4 align-items-center two">
+            <img class="" src="assets/images/icone/CreditCard.png" alt ="package" />
+
+            <div class = "flex flex-colum gap-1">
+                <h3>Secure Payment</h3>
+                <p>Your money is safe</p>
+            </div>
+        </div>
+        <div class="line">
+
+        </div>
+        
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3 d-flex align-items-center one">
+       
+        <div class="d-flex gap-4 align-items-center two">
+            <img class="" src="assets/images/icone/Vector.png" alt ="package" />
+
+            <div class = "flex flex-colum gap-1">
+                <h3>Support 24/7</h3>
+                <p>Live contact/message</p>
+            </div>
+        </div>
+       
+        
+    </div>
+
+    <!-- end row -->
+    </div>
+   
+    
+   </div>
+
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src = "assets/js/script.js"></script>
+
+</body>
+
+</html>
