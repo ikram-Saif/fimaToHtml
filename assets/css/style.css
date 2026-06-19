@@ -1228,16 +1228,22 @@ small{
     font-size: var(--text-medium);
     color:#686868
 }
+.cat .catlist{
+    padding-top: 40px;
+}
 .cat .single-cat{
     display: flex;
     flex-direction: column;
-    gap:16px
+    gap:16px;
+    justify-content: center;
+    align-items: center;
 }
 .cat .single-cat .cat-img{
     width:135px;
     height:135px ;
     border-radius:66%;
-    background-color:#F4F4F4
+    background-color:#F4F4F4;
+    overflow: hidden;
 }
 .cat .single-cat .cat-img img {
     width:100%;
