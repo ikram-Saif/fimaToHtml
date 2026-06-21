@@ -25,12 +25,18 @@
     --display-lg :48px;
 
 }
+body{
+    overflow-x:hidden;
+}
 .container-fluid{
     padding:29px 80px
 }
 
 .bg-primery {
     background-color: var(--primary-color);
+}
+.primery-color{
+    color: var(--primary-color);
 }
 
 * {
@@ -1167,7 +1173,7 @@ small{
     word-wrap: break-word;
   overflow-wrap: break-word;
 }
-.product .single-product .details .rating .star{
+ .star{
     color:#FFC62A;
     width:13px;
     height:12px;
@@ -1311,3 +1317,122 @@ small{
 .carousel-indicators .active{
     background-color: var(--primary-color) !important;
 } 
+/* review */
+.review .slide{
+    padding:32px 0 ;
+}
+
+.comment{
+    border: 1px solid #E4E4E4;
+}
+.review .comment .user .user-img{
+    width:48px;
+    height: 48px;
+    
+}
+.review .comment .user .user-img img{
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.review .comment p{
+    color:#686868;
+    font-size: var(--text-medium);
+    font-weight: 400;
+}
+.review .user .data h1{
+    font-size: var(--text-lg);
+    color: #161616;
+}
+.review .user .data span{
+    font-size: var(--text-sm);
+    color:#686868
+}
+
+
+.controls{
+    display:flex;
+    gap:10px;
+}
+
+.controls button{
+    position:static !important;
+    width:46px;
+    height:46px;
+    border:1px solid #EEEEEE;
+    border-radius:30px;
+    background:#fff;
+    opacity:1;
+    padding:8px
+
+}
+.controls .carousel-control-next,.carousel-control-prev i{
+    color: #666666;
+    font-size: var(--text-sm);
+}
+footer{
+background-color: #0F172A;
+color:#fff;
+font-weight: 300;
+
+}
+footer .about p{
+    width:500px;
+    font-size: var(--text-medium);
+}
+footer .title{
+    font-size: var(--text-lg);
+    font-weight: 400;
+    padding-bottom: 8px;
+}
+footer ul li{
+    list-style: none;
+}
+footer  a {
+    text-decoration: none;
+    color:#fff;
+    font-size: var(--text-medium);
+
+}
+footer  i{
+    font-size: var(--text-sm);
+    font-weight: 100;
+}
+footer .social a{
+    width:34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+footer a:hover{
+    color: var(--primary-color);
+}
+footer .second-footer{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:16px 0;
+    gap:24px;
+    flex-wrap: wrap;
+}
+
+.second-footer p{
+    color:#161616;
+    font-size: var(--text-sm);
+    margin: 0;
+    padding: 0;
+}
+.second-footer img{
+    display:block; /* removes inline-image offset */
+    height:24px;   /* optional */
+}
+.second-footer .d-flex{
+    display:flex;
+    align-items:center; /* center images */
+    gap:8px;
+}
