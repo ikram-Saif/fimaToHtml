@@ -60,25 +60,20 @@ document.querySelectorAll(".show-more").forEach(btn => {
                 : "Show Less";
     });
 });
-<script>
-const slider =
-document.getElementById("product-slider");
+const plusBtn = document.querySelector(".plus");
+const minusBtn = document.querySelector(".minus");
+const number = document.getElementById("number");
 
-slider.addEventListener(
-"slid.bs.carousel",
-function(e){
+let quantity = 1;
 
-document
-.querySelectorAll(".thumb")
-.forEach(
-el => el.classList.remove("active")
-);
-
-document
-.querySelector(
-`.thumb[data-bs-slide-to="${e.to}"]`
-)
-.classList.add("active");
-
+plusBtn.addEventListener("click", () => {
+    quantity++;
+    number.textContent = quantity;
 });
-</script>
+
+minusBtn.addEventListener("click", () => {
+    if (quantity > 1) {
+        quantity--;
+        number.textContent = quantity;
+    }
+});
