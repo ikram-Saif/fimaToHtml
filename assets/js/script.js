@@ -1,5 +1,7 @@
 
-    const dropdownBtn = document.querySelector('.dropdown');
+    const dropdownBtns = document.querySelectorAll('.dropdown');
+
+dropdownBtns.forEach(dropdownBtn => {
     const arrow = dropdownBtn.querySelector('.arrow');
 
     dropdownBtn.addEventListener('click', function () {
@@ -11,6 +13,7 @@
             arrow.classList.add('fa-chevron-up');
         }
     });
+});
 
 document.querySelectorAll('.dropdown-submenu > a').forEach(item => {
 
@@ -44,3 +47,38 @@ document.querySelectorAll('.dropdown').forEach(dropdown => {
     });
 
 });
+document.querySelectorAll(".show-more").forEach(btn => {
+    btn.addEventListener("click", () => {
+
+        const list = btn.nextElementSibling;
+
+        list.classList.toggle("d-none");
+
+        btn.textContent =
+            list.classList.contains("d-none")
+                ? "Show More"
+                : "Show Less";
+    });
+});
+<script>
+const slider =
+document.getElementById("product-slider");
+
+slider.addEventListener(
+"slid.bs.carousel",
+function(e){
+
+document
+.querySelectorAll(".thumb")
+.forEach(
+el => el.classList.remove("active")
+);
+
+document
+.querySelector(
+`.thumb[data-bs-slide-to="${e.to}"]`
+)
+.classList.add("active");
+
+});
+</script>

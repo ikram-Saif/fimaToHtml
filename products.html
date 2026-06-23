@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/Logo(1).png" alt="Logo">
+                </a>
+
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible Content -->
+                <div class="collapse navbar-collapse" id="navbarScroll">
+
+                    <!-- Search -->
+                    <form class="d-flex navbar-search mx-auto">
+                        <input class="form-control search-input" type="search" placeholder="Search for anything...">
+                        <button class="search-btn bg-white border-0 px-3" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+
+                    <!-- Switch -->
+                    <div class="form-check form-switch custom-switch navbar-switch">
+                        <input class="form-check-input" type="checkbox" id="vatSwitch" checked>
+                        <label class="form-check-label" for="vatSwitch">Vat</label>
+                    </div>
+
+                    <!-- Icons -->
+                    <ul class="navbar-nav d-flex flex-row gap-4 icon-menu white ms-lg-3">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link white"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link white"><i class="fa-regular fa-heart"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link white"><i class="fa-regular fa-user"></i></a>
+                        </li>
+                    </ul>
+
+                </div><!-- /.navbar-collapse -->
+
+            </div><!-- /.container-fluid -->
+
+        </nav>
+
+    </header>
+    <section class="main-menu-section">
+    <div class="container-fluid d-flex align-items-center justify-content-between gap-2 main-menu">
+
+        <ul class="d-flex align-items-center gap-3 gap-lg-5 flex-wrap mb-0 ps-0">
+            <li>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        All Categories
+                        <i class="fa-solid fa-chevron-down ms-2 arrow"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Insulation Boards</a></li>
+                        <li><a class="dropdown-item" href="#">Timber</a></li>
+                        <li class="dropdown-submenu">
+                           
+                             <a class="dropdown-item dropdown-toggle" href="#"> 
+                                 
+                                Insulation Boards  <i class="fa-solid fa-chevron-right submenu-arrow"></i></a>
+                            
+                            <ul class="sub-menu">
+                                <li><a class="dropdown-item" href="#">All</a></li>
+                                <li><a class="dropdown-item" href="#">Insulation Boards</a></li>
+                                <li><a class="dropdown-item" href="#">Insulation Slabs</a></li>
+                                <li><a class="dropdown-item" href="#">Insulation Rolls</a></li>
+                                <li><a class="dropdown-item" href="#">Material Type</a></li>
+                                <li><a class="dropdown-item" href="#">Applications</a></li>
+                                <li><a class="dropdown-item" href="#">Insulation Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Insulation Slabs</a></li>
+                        <li><a class="dropdown-item" href="#">Plasterboard</a></li>
+                        <li><a class="dropdown-item" href="#">Sheet Materials</a></li>
+                        <li><a class="dropdown-item" href="#">Doors</a></li>
+                        <li><a class="dropdown-item" href="#">Roofing</a></li>
+                        <li><a class="dropdown-item" href="#">Insulation Slabs</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <!-- Hide text labels on small screens, keep icons -->
+            <li>
+                <a href="#"><i class="fa-solid fa-location-dot"></i>
+                <span class="menu-label">Track Order</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-regular fa-comment"></i>
+                <span class="menu-label">Live Chat</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-solid fa-circle-info"></i>
+                <span class="menu-label">Need Help?</span></a>
+            </li>
+        </ul>
+
+        <div class="phone d-none d-sm-flex align-items-center gap-2">
+            <i class="fa-solid fa-phone"></i>
+            <span>+1-202-555-0104</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- products -->
+ <main class = "container-fluid">
+    <nav class="breadcrumb p-3">
+        <a class="breadcrumb-item" href="#">Home</a>
+        <span class="breadcrumb-item active" aria-current="page">Building Materials</span>
+    </nav>
+    
+    <div class = "product mb-4">
+       <div class="mb-4">
+        <div class="display-filter d-flex justify-content-between">
+            <div class = "sort d-flex align-items-center">
+                <label for="sort">Sort:</label>
+                  <select id = "sort" class="form-select border-0" aria-label="Default select example">
+                        <option value="1">Price (High to Low)</option>
+                        <option value="2">Price (low to High)</option>
+                        </select>
+            </div>
+            <div class="display-mode">
+                <img src="assets/images/icone/Show Style.png" alt="">
+            </div>
+        </div>
+       </div>
+       <div class="row g-3">
+         <aside class="col-lg-3 col-12 filter-sidebar">
+            <form action="">
+            
+            <div class="accordion filter-list" id="accordionExample">
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#category" aria-expanded="true" aria-controls="collapseOne">
+                    Categories
+
+                </button>
+            </h2>
+    <div id="category" class="accordion-collapse collapse show">
+      <div class="accordion-body">
+        <ul class = "p-0">
+            <li class="form-check d-flex justify-content-between align-items-center">
+                    <label class="form-check-label" for="cat1">
+                        Sand & Aggregates</label>
+                    <input class="form-check-input" type="radio" name="radioDefault" id="cat1">
+   
+            </li>
+            <li class="form-check d-flex justify-content-between align-items-center">
+                    <label class="form-check-label" for="cat2">
+                        Cements & Limes</label>
+                    <input class="form-check-input" type="radio" name="radioDefault" id="cat2">
+   
+            </li>
+            <li class="form-check d-flex justify-content-between align-items-center">
+                    <label class="form-check-label" for="cat3">
+                        Bricks & Blocks</label>
+                    <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+   
+            </li>
+            <li class = "show-more">
+                Show More
+   
+            </li>
+            <div class = "d-none"> 
+             <li class="form-check d-flex justify-content-between align-items-center">
+                    <label class="form-check-label" for="cat3">
+                        Bricks & Blocks</label>
+                    <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+   
+            </li>
+             <li class="form-check d-flex justify-content-between align-items-center">
+                    <label class="form-check-label" for="cat3">
+                        Bricks & Blocks</label>
+                    <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+   
+            </li>
+             <li class="form-check d-flex justify-content-between align-items-center">
+                    <label class="form-check-label" for="cat3">
+                        Bricks & Blocks</label>
+                    <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+   
+            </li>
+            </div>
+        </ul>
+      </div>
+    </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Density
+                </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class = "p-0">
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat1">
+                                    1100kg/m3</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat1">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat2">
+                                   1550kg/m3</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat2">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    B1600kg/m3</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    1700kg/m3</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                   1900kg/m3</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class = "show-more">
+                            Show More
+            
+                        </li>
+                        <div class = "d-none"> 
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        </div>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Size
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class = "p-0">
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat1">
+                                    14L</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat1">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat2">
+                                   160/110mm</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat2">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    20kg</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bulk Bag</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Loose Load</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class = "show-more">
+                            Show More
+            
+                        </li>
+                        <div class = "d-none"> 
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        </div>
+                    </ul>
+                </div>
+                </div>
+            </div>
+             <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Colour
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class = "p-0">
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat1">
+                                    Black</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat1">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat2">
+                                   Blue</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat2">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Brown</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Red</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Orange</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class = "show-more">
+                            Show More
+            
+                        </li>
+                        <div class = "d-none"> 
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        </div>
+                    </ul>
+                </div>
+                </div>
+            </div>
+             <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Material type
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class = "p-0">
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat1">
+                                    Sand & Aggregates</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat1">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat2">
+                                    Cements & Limes</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat2">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class = "show-more">
+                            Show More
+            
+                        </li>
+                        <div class = "d-none"> 
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        </div>
+                    </ul>
+                </div>
+                </div>
+            </div>
+             <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Width
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class = "p-0">
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat1">
+                                    Sand & Aggregates</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat1">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat2">
+                                    Cements & Limes</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat2">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class = "show-more">
+                            Show More
+            
+                        </li>
+                        <div class = "d-none"> 
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        </div>
+                    </ul>
+                </div>
+                </div>
+            </div>
+             <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Fire rating
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class = "p-0">
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat1">
+                                    Sand & Aggregates</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat1">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat2">
+                                    Cements & Limes</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat2">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class = "show-more">
+                            Show More
+            
+                        </li>
+                        <div class = "d-none"> 
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        </div>
+                    </ul>
+                </div>
+                </div>
+            </div>
+             <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Gauge
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class = "p-0">
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat1">
+                                    Sand & Aggregates</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat1">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat2">
+                                    Cements & Limes</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat2">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class = "show-more">
+                            Show More
+            
+                        </li>
+                        <div class = "d-none"> 
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        </div>
+                    </ul>
+                </div>
+                </div>
+            </div>
+             <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Manufacturer
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class = "p-0">
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat1">
+                                    Sand & Aggregates</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat1">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat2">
+                                    Cements & Limes</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat2">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class = "show-more">
+                            Show More
+            
+                        </li>
+                        <div class = "d-none"> 
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        </div>
+                    </ul>
+                </div>
+                </div>
+            </div>
+             <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                   Bag size
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class = "p-0">
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat1">
+                                    Sand & Aggregates</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat1">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat2">
+                                    Cements & Limes</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat2">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class = "show-more">
+                            Show More
+            
+                        </li>
+                        <div class = "d-none"> 
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        </div>
+                    </ul>
+                </div>
+                </div>
+            </div>
+             <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                   Edge
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class = "p-0">
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat1">
+                                    Sand & Aggregates</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat1">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat2">
+                                    Cements & Limes</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat2">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class = "show-more">
+                            Show More
+            
+                        </li>
+                        <div class = "d-none"> 
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        </div>
+                    </ul>
+                </div>
+                </div>
+            </div>
+             <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                   Compressive strength
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class = "p-0">
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat1">
+                                    Sand & Aggregates</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat1">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat2">
+                                    Cements & Limes</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat2">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class = "show-more">
+                            Show More
+            
+                        </li>
+                        <div class = "d-none"> 
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        </div>
+                    </ul>
+                </div>
+                </div>
+            </div>
+             <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                   Thermal conductivity
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class = "p-0">
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat1">
+                                    Sand & Aggregates</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat1">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat2">
+                                    Cements & Limes</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat2">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class = "show-more">
+                            Show More
+            
+                        </li>
+                        <div class = "d-none"> 
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        </div>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Cavity width
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class = "p-0">
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat1">
+                                    Sand & Aggregates</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat1">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat2">
+                                    Cements & Limes</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat2">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class = "show-more">
+                            Show More
+            
+                        </li>
+                        <div class = "d-none"> 
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        <li class="form-check d-flex justify-content-between align-items-center">
+                                <label class="form-check-label" for="cat3">
+                                    Bricks & Blocks</label>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="cat3">
+            
+                        </li>
+                        </div>
+                    </ul>
+                </div>
+                </div>
+                <button type="reset" class = "btn btn-block reset-filter">Reset Filter</button> 
+            </div>
+       
+</div>
+
+        
+        </form>
+        </aside>
+
+        <div class="col-lg-9 col-12">
+        <div class="row gy-3">
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class = "single-product">
+                    <div class = "product-img">
+                    <img src="assets/images/product/prod2.jpg" alt="" class="">
+                        <div class = "badge d-flex align-items center justify-content-center">
+                            <span>core</span>
+                            <img src="assets/images/icone/Polygon 1.png" alt="">
+
+                        </div>
+                    </div>
+                    <div class="details d-flex flex-column gap-1" >
+                        <small class = "type">Timber</small>
+                        <h2>MOT Type 1 Sub Base Bulk Bag (800kg)</h2>
+                        <div class="rating">
+                           <span class="star">
+                                ★★★★☆
+                           </span> 
+                            <span>(4.5)</span>
+                        </div>
+
+                        <div class="price">
+                        £49.90
+                      </div>
+                    </div>
+                    
+                    <div class="action d-flex pt-2 gap-2">
+                          <button class="add"> Add to cart <img src="assets/images/icone/cart.png" alt=""></button> 
+                          
+                        <button class = "love">
+                         <img src="assets/images/icone/icon.png" alt="">
+                        </button>
+                    </div>
+
+
+                </div>
+
+               
+
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class = "single-product">
+                    <div class = "product-img">
+                    <img src="assets/images/product/prod8.jpg" alt="" class="">
+
+                    <div class = "badge d-flex align-items center justify-content-center">
+                            <span>core</span>
+                            <img src="assets/images/icone/Polygon 1.png" alt="">
+
+                        </div>
+
+                    </div>
+                    <div class="details d-flex flex-column gap-1" >
+                        <small class = "type">Timber</small>
+                        <h2>Sharp Sand Bulk Bag (800kg)</h2>
+                        <div class="rating">
+                           <span class="star">
+                                ★★★★☆
+                           </span> 
+                            <span>(4.5)</span>
+                        </div>
+
+                        <div class="price">
+                        £49.90
+                      </div>
+                    </div>
+                    
+                    <div class="action d-flex pt-2 gap-2">
+                          <button class="add"> Add to cart <img src="assets/images/icone/cart.png" alt=""></button> 
+                          
+                        <button class = "love">
+                         <img src="assets/images/icone/icon.png" alt="">
+                        </button>
+                    </div>
+
+
+                </div>
+
+               
+
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class = "single-product">
+                    <div class = "product-img">
+                    <img src="assets/images/product/prod3.jpg" alt="" class="">
+
+                    </div>
+                    <div class="details d-flex flex-column gap-1" >
+                        <small class = "type">Timber</small>
+                        <h2>11mm Structural OSB 3 Sterling Board 2440mm x 1220mm (8' x 4')</h2>
+                        <div class="rating">
+                           <span class="star">
+                                ★★★★☆
+                           </span> 
+                            <span>(4.5)</span>
+                        </div>
+
+                        <div class="price">
+                        £49.90
+                      </div>
+                    </div>
+                    
+                    <div class="action d-flex pt-2 gap-2">
+                          <button class="add"> Add to cart <img src="assets/images/icone/cart.png" alt=""></button> 
+                          
+                        <button class = "love">
+                         <img src="assets/images/icone/icon.png" alt="">
+                        </button>
+                    </div>
+
+
+                </div>
+
+               
+
+            </div>
+             <div class="col-12 col-md-6 col-xl-4">
+                <div class = "single-product">
+                    <div class = "product-img">
+                    <img src="assets/images/product/prod6.jpg" alt="" class="">
+                    <div class = "badge d-flex align-items center justify-content-center">
+                            <span>core</span>
+                            <img src="assets/images/icone/Polygon 1.png" alt="">
+
+                        </div>
+
+                    </div>
+                    <div class="details d-flex flex-column gap-1" >
+                        <small class = "type">Timber</small>
+                        <h2>47mm x 100mm Sawn Treated Timber C16/C24 (4" x 2") 4.8m</h2>
+                        <div class="rating">
+                           <span class="star">
+                                ★★★★☆
+                           </span> 
+                            <span>(4.5)</span>
+                        </div>
+
+                        <div class="price">
+                        £49.90
+                      </div>
+                    </div>
+                    
+                    <div class="action d-flex pt-2 gap-2">
+                          <button class="add"> Add to cart <img src="assets/images/icone/cart.png" alt=""></button> 
+                          
+                        <button class = "love">
+                         <img src="assets/images/icone/icon.png" alt="">
+                        </button>
+                    </div>
+
+
+                </div>
+
+               
+
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class = "single-product">
+                    <div class = "product-img">
+                    <img src="assets/images/product/prod6.jpg" alt="" class="">
+
+                    </div>
+                    <div class="details d-flex flex-column gap-1" >
+                        <small class = "type">Timber</small>
+                        <h2>47mm x 100mm Sawn Treated Timber C16/C24 (4" x 2") 4.8m</h2>
+                        <div class="rating">
+                           <span class="star">
+                                ★★★★☆
+                           </span> 
+                            <span>(4.5)</span>
+                        </div>
+
+                        <div class="price">
+                        £49.90
+                      </div>
+                    </div>
+                    
+                    <div class="action d-flex pt-2 gap-2">
+                          <button class="add"> Add to cart <img src="assets/images/icone/cart.png" alt=""></button> 
+                          
+                        <button class = "love">
+                         <img src="assets/images/icone/icon.png" alt="">
+                        </button>
+                    </div>
+
+
+                </div>
+
+               
+
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class = "single-product">
+                    <div class = "product-img">
+                    <img src="assets/images/product/prod6.jpg" alt="" class="">
+
+                    </div>
+                    <div class="details d-flex flex-column gap-1" >
+                        <small class = "type">Timber</small>
+                        <h2>47mm x 100mm Sawn Treated Timber C16/C24 (4" x 2") 4.8m</h2>
+                        <div class="rating">
+                           <span class="star">
+                                ★★★★☆
+                           </span> 
+                            <span>(4.5)</span>
+                        </div>
+
+                        <div class="price">
+                        £49.90
+                      </div>
+                    </div>
+                    
+                    <div class="action d-flex pt-2 gap-2">
+                          <button class="add"> Add to cart <img src="assets/images/icone/cart.png" alt=""></button> 
+                          
+                        <button class = "love">
+                         <img src="assets/images/icone/icon.png" alt="">
+                        </button>
+                    </div>
+
+
+                </div>
+
+               
+
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class = "single-product">
+                    <div class = "product-img">
+                    <img src="assets/images/product/prod6.jpg" alt="" class="">
+
+                    </div>
+                    <div class="details d-flex flex-column gap-1" >
+                        <small class = "type">Timber</small>
+                        <h2>47mm x 100mm Sawn Treated Timber C16/C24 (4" x 2") 4.8m</h2>
+                        <div class="rating">
+                           <span class="star">
+                                ★★★★☆
+                           </span> 
+                            <span>(4.5)</span>
+                        </div>
+
+                        <div class="price">
+                        £49.90
+                      </div>
+                    </div>
+                    
+                    <div class="action d-flex pt-2 gap-2">
+                          <button class="add"> Add to cart <img src="assets/images/icone/cart.png" alt=""></button> 
+                          
+                        <button class = "love">
+                         <img src="assets/images/icone/icon.png" alt="">
+                        </button>
+                    </div>
+
+
+                </div>
+
+               
+
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class = "single-product">
+                    <div class = "product-img">
+                    <img src="assets/images/product/prod6.jpg" alt="" class="">
+
+                    </div>
+                    <div class="details d-flex flex-column gap-1" >
+                        <small class = "type">Timber</small>
+                        <h2>47mm x 100mm Sawn Treated Timber C16/C24 (4" x 2") 4.8m</h2>
+                        <div class="rating">
+                           <span class="star">
+                                ★★★★☆
+                           </span> 
+                            <span>(4.5)</span>
+                        </div>
+
+                        <div class="price">
+                        £49.90
+                      </div>
+                    </div>
+                    
+                    <div class="action d-flex pt-2 gap-2">
+                          <button class="add"> Add to cart <img src="assets/images/icone/cart.png" alt=""></button> 
+                          
+                        <button class = "love">
+                         <img src="assets/images/icone/icon.png" alt="">
+                        </button>
+                    </div>
+
+
+                </div>
+
+               
+
+            </div>
+        </div>
+ <div class = "d-flex align-items-center justify-content-center pt-5">
+            <button class = "showAll w-25">Show More</button>
+        </div>
+            </div>
+       </div>
+       
+    </div>
+       
+</main>
+
+ <footer >
+    <div class = "container-fluid">
+    <div class="d-flex justify-content-between flex-wrap">
+        <div class="about">
+            <h3 class="title">About Us</h3>
+            <p>Your trusted destination for construction materials and building supplies. We help contractors, businesses, and homeowners find the right products, receive competitive supplier offers, and manage orders with confidence.</p>
+        </div>
+        <div class="myAccount d-flex flex-column gap-2">
+            <h3 class="title">My Account</h3>
+                <a href=""><i class="fa-solid fa-angles-right"></i>My Account</a>
+                <a href=""><i class="fa-solid fa-angles-right"></i> My Order</a>
+                <a href=""><i class="fa-solid fa-angles-right"></i>Shopping Cart</a>
+                <a href=""><i class="fa-solid fa-angles-right"></i> Wishlist</a>
+         
+         
+        </div>
+        <div class="links d-flex flex-column gap-2">
+             <h3 class = "title">About Us</h3>
+                <a href=""><i class="fa-solid fa-angles-right"></i>About Us</a>
+                <a href=""><i class="fa-solid fa-angles-right"></i>Privacy Policy</a>
+                <a href=""><i class="fa-solid fa-angles-right"></i>Terms & Conditions </a>
+                 <a href=""><i class="fa-solid fa-angles-right"></i>Customer Support </a>
+           
+        </div>
+        <div class="contactUs d-flex flex-column gap-2">
+             <h3 class="title">About Us</h3>
+         
+                        
+                       <a href=""> 
+                        <i class="fa-solid fa-angles-right"> </i>
+                        Whats App:<br><span class = "ps-4">009612345678932</span> 
+                    </a>
+                    <a href=""> 
+                        <i class="fa-solid fa-angles-right"> </i>
+                        Mobile:<br><span class = "ps-4">009612345678932</span> 
+                    </a>
+                    <a href=""> 
+                        <i class="fa-solid fa-angles-right"> </i>
+                        Email:<br><span class = "ps-4">https://example.sa</span> 
+                    </a>
+                        
+
+        </div>
+        <div class="social d-flex flex-column gap-2">
+             <h3 class="title">About Us</h3>
+           <div class = "d-flex flex-wrap gap-2">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-twitter primery-color"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                 <a><i class="fa-brands fa-snapchat"></i></a>
+           </div>
+               
+        </div>
+    </div>
+    </div>
+    <div class="second-footer">
+            <p>© 2026. All Rights Reserved. Built for Master Material.</p>
+            <div class="d-flex gap-2 align-items-baseline">
+                <img src="assets/images/icone/pay.png" alt=""/>
+                <img src="assets/images/icone/paypal.png" alt=""/>
+                <img src="assets/images/icone/pay2.png" alt=""/>
+                <img src="assets/images/icone/aex.png" alt=""/>
+                <img src="assets/images/icone/master.png" alt=""/>
+                <img src="assets/images/icone/visa.png" alt=""/>
+            </div>
+            
+            <p>Company Number: 546987552</p>
+        </div>
+ </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src = "assets/js/script.js"></script>
+
+</body>
+
+</html>
