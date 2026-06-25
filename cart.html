@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/Logo(1).png" alt="Logo">
+                </a>
+
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible Content -->
+                <div class="collapse navbar-collapse" id="navbarScroll">
+
+                    <!-- Search -->
+                    <form class="d-flex navbar-search mx-auto">
+                        <input class="form-control search-input" type="search" placeholder="Search for anything...">
+                        <button class="search-btn bg-white border-0 px-3" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+
+                    <!-- Switch -->
+                    <div class="form-check form-switch custom-switch navbar-switch">
+                        <input class="form-check-input" type="checkbox" id="vatSwitch" checked>
+                        <label class="form-check-label" for="vatSwitch">Vat</label>
+                    </div>
+
+                    <!-- Icons -->
+                    <ul class="navbar-nav d-flex flex-row gap-4 icon-menu white ms-lg-3">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link white"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link white"><i class="fa-regular fa-heart"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link white"><i class="fa-regular fa-user"></i></a>
+                        </li>
+                    </ul>
+
+                </div><!-- /.navbar-collapse -->
+
+            </div><!-- /.container-fluid -->
+
+        </nav>
+
+    </header>
+    <section class="main-menu-section">
+    <div class="container-fluid d-flex align-items-center justify-content-between gap-2 main-menu">
+
+        <ul class="d-flex align-items-center gap-3 gap-lg-5 flex-wrap mb-0 ps-0">
+            <li>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        All Categories
+                        <i class="fa-solid fa-chevron-down ms-2 arrow"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Insulation Boards</a></li>
+                        <li><a class="dropdown-item" href="#">Timber</a></li>
+                        <li class="dropdown-submenu">
+                           
+                             <a class="dropdown-item dropdown-toggle" href="#"> 
+                                 
+                                Insulation Boards  <i class="fa-solid fa-chevron-right submenu-arrow"></i></a>
+                            
+                            <ul class="sub-menu">
+                                <li><a class="dropdown-item" href="#">All</a></li>
+                                <li><a class="dropdown-item" href="#">Insulation Boards</a></li>
+                                <li><a class="dropdown-item" href="#">Insulation Slabs</a></li>
+                                <li><a class="dropdown-item" href="#">Insulation Rolls</a></li>
+                                <li><a class="dropdown-item" href="#">Material Type</a></li>
+                                <li><a class="dropdown-item" href="#">Applications</a></li>
+                                <li><a class="dropdown-item" href="#">Insulation Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Insulation Slabs</a></li>
+                        <li><a class="dropdown-item" href="#">Plasterboard</a></li>
+                        <li><a class="dropdown-item" href="#">Sheet Materials</a></li>
+                        <li><a class="dropdown-item" href="#">Doors</a></li>
+                        <li><a class="dropdown-item" href="#">Roofing</a></li>
+                        <li><a class="dropdown-item" href="#">Insulation Slabs</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <!-- Hide text labels on small screens, keep icons -->
+            <li>
+                <a href="#"><i class="fa-solid fa-location-dot"></i>
+                <span class="menu-label">Track Order</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-regular fa-comment"></i>
+                <span class="menu-label">Live Chat</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-solid fa-circle-info"></i>
+                <span class="menu-label">Need Help?</span></a>
+            </li>
+        </ul>
+
+        <div class="phone d-none d-sm-flex align-items-center gap-2">
+            <i class="fa-solid fa-phone"></i>
+            <span>+1-202-555-0104</span>
+        </div>
+
+    </div>
+</section>
+<main class = "container-fluid">
+    <nav class="breadcrumb p-3">
+        <a class="breadcrumb-item" href="#">Home</a>
+        <span class="breadcrumb-item active" aria-current="page">Cart</span>
+    </nav>
+<div class="row cart">
+   <div class="wish-list col-12 col-md-12 col-lg-9 d-flex flex-column gap-3">
+        <div class="product d-flex justify-content-between align-items-center flex-wrap">
+            
+        <div class = "product-img">
+            <img src="assets/images/product/prod1.jpg" alt="">
+        </div>
+        <h3 class= "product-name">MOT Type 1 Sub Base Bulk Bag (800kg)</h3>
+        <div class="quant">
+                <span class = "plus "><img src="assets/images/icone/plus.png" alt=""></span>
+                <span id="number">1</span>
+                <span class = "minus"><img src="assets/images/icone/min.png" alt=""></span>
+            </div>
+            <h3 class = "price">£49.90</h3>
+        <div class="action d-flex gap-2">
+            <span><img src="assets/images/icone/Cancel.png" alt=""></span>
+        </div>
+        </div>
+        <div class="product d-flex justify-content-between align-items-center flex-wrap">
+            
+        <div class = "product-img">
+            <img src="assets/images/product/prod1.jpg" alt="">
+        </div>
+        <h3 class= "product-name">MOT Type 1 Sub Base Bulk Bag (800kg)</h3>
+        <div class="quant">
+                <span class = "plus "><img src="assets/images/icone/plus.png" alt=""></span>
+                <span id="number">1</span>
+                <span class = "minus"><img src="assets/images/icone/min.png" alt=""></span>
+            </div>
+            <h3 class = "price">£49.90</h3>
+        <div class="action d-flex gap-2">
+            <span><img src="assets/images/icone/Cancel.png" alt=""></span>
+        </div>
+        </div>
+         <div class="product d-flex justify-content-between align-items-center flex-wrap">
+            
+        <div class = "product-img">
+            <img src="assets/images/product/prod1.jpg" alt="">
+        </div>
+        <h3 class= "product-name">MOT Type 1 Sub Base Bulk Bag (800kg)</h3>
+        <div class="quant">
+                <span class = "plus "><img src="assets/images/icone/plus.png" alt=""></span>
+                <span id="number">1</span>
+                <span class = "minus"><img src="assets/images/icone/min.png" alt=""></span>
+            </div>
+            <h3 class = "price">£49.90</h3>
+        <div class="action d-flex gap-2">
+            <span><img src="assets/images/icone/Cancel.png" alt=""></span>
+           
+        </div>
+        </div>
+         <div class="product d-flex justify-content-between align-items-center flex-wrap">
+            
+        <div class = "product-img">
+            <img src="assets/images/product/prod1.jpg" alt="">
+        </div>
+        <h3 class= "product-name">MOT Type 1 Sub Base Bulk Bag (800kg)</h3>
+        <div class="quant">
+                <span class = "plus "><img src="assets/images/icone/plus.png" alt=""></span>
+                <span id="number">1</span>
+                <span class = "minus"><img src="assets/images/icone/min.png" alt=""></span>
+            </div>
+            <h3 class = "price">£49.90</h3>
+        <div class="action d-flex gap-2">
+            <span><img src="assets/images/icone/Cancel.png" alt=""></span>
+        </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+<div class="col-lg-3 col-12 col-md-12">
+    <div class="summery d-flex flex-column gap-3 p-3">
+        <span class = "title">Order Summary</span>
+        <div class="d-flex justify-content-between">
+            <span>Products Total</span>
+            <span>£49.90</span>
+        </div>
+            <div class = "discound">
+                <label for="">Do you have a discount code?</label>
+                <input type="text">
+                <button class = "apply">Apply</button>
+            </div>
+            <hr>
+                <div class="d-flex justify-content-between">
+                    <span>VAT</span>
+                    <span>£5</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <span>Delivery</span>
+                    <span>£5</span>
+                </div>
+                <hr>
+                 <div class="d-flex justify-content-between total">
+                    <span>Total</span>
+                    <span>£5</span>
+                </div>
+                <button class="btn bg-primery white py-3">Proceed to Checkout</button>
+        </div>
+    </div>
+</div>
+</main>
+
+
+ <footer >
+    <div class = "container-fluid">
+    <div class="d-flex justify-content-between flex-wrap">
+        <div class="about">
+            <h3 class="title">About Us</h3>
+            <p>Your trusted destination for construction materials and building supplies. We help contractors, businesses, and homeowners find the right products, receive competitive supplier offers, and manage orders with confidence.</p>
+        </div>
+        <div class="myAccount d-flex flex-column gap-2">
+            <h3 class="title">My Account</h3>
+                <a href=""><i class="fa-solid fa-angles-right"></i>My Account</a>
+                <a href=""><i class="fa-solid fa-angles-right"></i> My Order</a>
+                <a href=""><i class="fa-solid fa-angles-right"></i>Shopping Cart</a>
+                <a href=""><i class="fa-solid fa-angles-right"></i> Wishlist</a>
+         
+         
+        </div>
+        <div class="links d-flex flex-column gap-2">
+             <h3 class = "title">About Us</h3>
+                <a href=""><i class="fa-solid fa-angles-right"></i>About Us</a>
+                <a href=""><i class="fa-solid fa-angles-right"></i>Privacy Policy</a>
+                <a href=""><i class="fa-solid fa-angles-right"></i>Terms & Conditions </a>
+                 <a href=""><i class="fa-solid fa-angles-right"></i>Customer Support </a>
+           
+        </div>
+        <div class="contactUs d-flex flex-column gap-2">
+             <h3 class="title">About Us</h3>
+         
+                        
+                       <a href=""> 
+                        <i class="fa-solid fa-angles-right"> </i>
+                        Whats App:<br><span class = "ps-4">009612345678932</span> 
+                    </a>
+                    <a href=""> 
+                        <i class="fa-solid fa-angles-right"> </i>
+                        Mobile:<br><span class = "ps-4">009612345678932</span> 
+                    </a>
+                    <a href=""> 
+                        <i class="fa-solid fa-angles-right"> </i>
+                        Email:<br><span class = "ps-4">https://example.sa</span> 
+                    </a>
+                        
+
+        </div>
+        <div class="social d-flex flex-column gap-2">
+             <h3 class="title">About Us</h3>
+           <div class = "d-flex flex-wrap gap-2">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-twitter primery-color"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                 <a><i class="fa-brands fa-snapchat"></i></a>
+           </div>
+               
+        </div>
+    </div>
+    </div>
+    <div class="second-footer">
+            <p>© 2026. All Rights Reserved. Built for Master Material.</p>
+            <div class="d-flex gap-2 align-items-baseline">
+                <img src="assets/images/icone/pay.png" alt=""/>
+                <img src="assets/images/icone/paypal.png" alt=""/>
+                <img src="assets/images/icone/pay2.png" alt=""/>
+                <img src="assets/images/icone/aex.png" alt=""/>
+                <img src="assets/images/icone/master.png" alt=""/>
+                <img src="assets/images/icone/visa.png" alt=""/>
+            </div>
+            
+            <p>Company Number: 546987552</p>
+        </div>
+ </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+        <script src = "assets/js/script.js"></script>
+
+</body>
+
+</html>

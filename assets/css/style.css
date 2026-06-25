@@ -2103,3 +2103,42 @@ color:#464646
     margin-top: 8px;
 }
 }
+.cart .summery{
+    border:1px solid #EEEEEE;
+    border-radius: 4px;
+    color:#686868;
+    font-weight: 400;
+    font-size: var(--text-medium);
+}
+.cart .summery .title{
+    font-size: var(--text-lg);
+    color: #464646;
+}
+.cart .summery .discound label{
+    font-size: 14px;
+    color:#464646
+}
+.cart .summery .discound input{
+    border:1px solid #EEEEEE;
+    padding: 10px 12px;
+    border-radius: var(--radius-sm);
+    border-top-right-radius: 4px;
+    width:58%
+}
+.cart .summery .discound button{
+    background-color: #fff;
+    border:1px solid var(--primary-color);
+    padding:10px 16px;
+    border-radius: var(--radius-sm);
+     border-top-right-radius: 4px;
+
+}
+.cart .summery hr{
+  border:1px solid #EEEEEE
+}
+.cart .summery .total{
+color:#464646
+}
+.cart .summery button{
+    background-color: var(--primary-color);
+}
