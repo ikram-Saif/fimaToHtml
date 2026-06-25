@@ -2142,3 +2142,79 @@ color:#464646
 .cart .summery button{
     background-color: var(--primary-color);
 }
+.cart-login-form .header h1{
+    font-size: var(--display-md);
+    color:#161616
+}
+
+.cart-login-form{
+    border:1px solid #E4E4E4;
+    border-radius: var(--radius-sm);
+    width:calc((100% - 16px)/2)
+}
+.cart-login-form form {
+    padding-top:40px
+}
+.cart-login-form form label{
+    font-size: var(--text-sm);
+    color:#362E2E
+}
+.cart-login-form form input{
+    padding:14px 12px 17px;
+    border:1px solid #F4F4F4;
+    background-color: #FAFAFA;
+}
+.cart-login-form form .forgot{
+    flex-direction: row-reverse;
+}
+.gest-form{
+    background-color: #FAFAFA;
+}
+.gest-form form{
+    gap:40px
+}
+.gest-form form button{
+    background-color: #0F172A;
+}
+@media (max-width: 768px) {
+
+    /* Parent container */
+    .d-flex.gap-3.align-items-start {
+        flex-direction: column;
+    }
+
+    .cart-login-form {
+        width: 100%;
+    }
+
+    .cart-login-form .header h1 {
+        font-size: 28px; /* adjust if needed */
+    }
+
+    .cart-login-form form {
+        padding-top: 24px;
+    }
+
+    .cart-login-form button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .cart-login-form {
+        padding: 16px !important;
+    }
+
+    .cart-login-form .header h1 {
+        font-size: 22px;
+    }
+
+    .cart-login-form .header p {
+        font-size: 14px;
+    }
+
+    .cart-login-form form input {
+        padding: 12px;
+    }
+}
