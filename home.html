@@ -62,9 +62,20 @@
                         <li class="nav-item">
                             <a href="#" class="nav-link white"><i class="fa-regular fa-heart"></i></a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link white"><i class="fa-regular fa-user"></i></a>
-                        </li>
+                       <!-- user dropdown -->
+                    <li class="nav-item dropdown">
+                        <button class="nav-link white bg-transparent border-0" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-user"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end user-dropdown">
+                        <li>Logged in as: <br> <span class = "primery-color">karimsharaf44@GMAIL.COM</span></li>
+                        <li><a class="dropdown-item" href="#">My Orders</a></li>
+                        <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                        <li class = "border-0 logout text-center">  <a href="">
+                            <img src="assets/images/icone/logout.png" alt="">
+                            Logout </a></li>
+                        </ul>
+                    </li>
                     </ul>
 
                 </div><!-- /.navbar-collapse -->

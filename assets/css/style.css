@@ -2409,3 +2409,20 @@ flatpickr-day.selected,
   background-color: #e06610;
   color: #fff;
 }
+
+.user-dropdown{
+    border-radius: 16px;
+    border-top-right-radius: 0;
+    padding:16px;
+
+}
+.user-dropdown li{
+    border-bottom: 1px solid #E4E4E4;
+    padding:16px 0px;
+    font-size: var(--text-sm);
+    color:#161616
+}
+.user-dropdown .logout a {
+    color:#F04438;
+    text-decoration: none;
+}
