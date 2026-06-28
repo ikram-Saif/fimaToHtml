@@ -2430,3 +2430,15 @@ flatpickr-day.selected,
     border:1px solid #E4E4E4;
     padding:24px 16px
 }
+.empty{
+    padding-top: 92px;
+    padding-bottom: 92px;
+}
+.empty h1{
+    font-size: var(--display-xs);
+    color:#464646
+}
+.empty p{
+    color:#949494;
+    font-size: var(--text-medium);
+}
