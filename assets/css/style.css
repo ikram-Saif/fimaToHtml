@@ -2426,3 +2426,7 @@ flatpickr-day.selected,
     color:#F04438;
     text-decoration: none;
 }
+.account{
+    border:1px solid #E4E4E4;
+    padding:24px 16px
+}
