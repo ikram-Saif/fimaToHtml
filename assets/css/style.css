@@ -2218,3 +2218,113 @@ color:#464646
         padding: 12px;
     }
 }
+.step span{
+    width:32px;
+    height: 32px;
+    border-radius: 50%;
+    border:2px solid #E4E4E4;
+    padding:4px 11px;
+    color: #949494;
+}
+.step .active{
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px #F97316;
+}
+.step h3{
+    font-size: var(--text-sm);
+    font-weight: 500;
+}
+.step .line{
+    width:45px;
+    height: 0px;
+    border:0.5px solid #8E8E93
+}
+.bill {
+    border:1px solid #E4E4E4;
+    border-radius: var(--radius-sm);
+    padding:24px 16px
+}
+.bill .title{
+ font-size: var(--text-lg);
+ color:#2F2F2F;
+ font-weight:400
+}
+.bill form label{
+    color:#362E2E;
+    font-size:var(--text-sm);
+    font-weight: 400;
+}
+.bill form input{
+    background-color: #FAFAFA;
+    border:1px solid #F4F4F4;
+    border-radius: var(--radius-sm);
+    padding:14px 12px
+}
+.bill form .addressLink{
+    color:var(--primary-color);
+    text-decoration: underline;
+    font-size: var(--text-sm);
+    font-weight: 400;
+    cursor: pointer;
+}
+.bill form .byingAs button{
+ padding : 4px 35px;
+ border:1px solid #E4E4E4;
+ border-radius: var(--radius-sm);
+}
+
+.bill .form-check-input {
+  border-color: #D6D6D6;
+padding: 0;
+}
+
+/* checked background and border */
+.bill .form-check-input:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* focus ring color */
+.bill .form-check-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(249, 115, 22, 0.25);
+}
+flatpickr-day.selected,
+  .flatpickr-day.selected:hover {
+    background-color: #F97316;
+    border-color: #F97316;
+  }
+
+
+  .flatpickr-months .flatpickr-month,
+.flatpickr-day {
+    color: #F97316;
+  }
+
+
+  .flatpickr-current-month .flatpickr-monthDropdown-months,
+  .flatpickr-current-month input.cur-year {
+    color: var(--primary-color);
+  }
+
+  span.flatpickr-weekday {
+    color: #949494;
+    font-size: var(--text-sm);
+    font-width: 400;
+  }
+  /* selected day circle */
+.flatpickr-day.selected,
+.flatpickr-day.selected:hover,
+.flatpickr-day.selected:focus {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+}
+  .bill .form-control[readonly]{
+    background-color: #FAFAFA;
+  }
+  .bill .calender {
+  cursor: pointer;
+  background-color: #FAFAFA;
+  border-color: #F4F4F4;
+}

@@ -77,3 +77,12 @@ minusBtn.addEventListener("click", () => {
         number.textContent = quantity;
     }
 });
+document.getElementById('deliveryCheck').addEventListener('change', function () {
+    const fields = document.getElementById('deliveryFields');
+    if (this.checked) {
+      fields.classList.remove('show');
+    } else {
+      fields.classList.add('show');
+    }
+  });
+  
