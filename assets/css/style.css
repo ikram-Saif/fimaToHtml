@@ -47,6 +47,9 @@ body{
 .withe{
     color: #fff;
 }
+.black{
+    color: #000;
+}
 
 * {
     margin: 0;
@@ -2467,4 +2470,52 @@ font-weight: 400;
 .nav-tabs .nav-link{
     width:165px;
     text-align: center;
+}
+#request select ,#request option {
+    background-color: #FAFAFA;
+    border: 1px solid #F4F4F4;
+    border-radius: var(--radius-sm);
+    padding: 14px 12px;
+}
+.upload-area {
+  border: 1px dashed var(--primary-color);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.upload-area:hover {
+  background-color: rgba(249, 115, 22, 0.05);
+}
+
+.upload-preview {
+  width: 64px;
+  height: 64px;
+  background: #f0f0f0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.upload-icon {
+  font-size: 24px;
+  color: #aaa;
+}
+
+.upload-text {
+  font-size: var(--text-sm);
+  color: #949494;
+  margin-bottom: 4px;
+}
+
+.upload-hint {
+  font-size: 10px;
+  color: #949494;
+}
+#request .title{
+    color:#2F2F2F;
+    font-size: var(--text-lg);
 }

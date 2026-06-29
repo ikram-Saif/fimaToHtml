@@ -233,7 +233,52 @@
          <!--  -->
 
        </div>
+      <!-- custom request tab content  -->
+       <div class="tab-pane fade show py-4 px-3" id="request" role="tabpanel" >
+        <h1 class = "title">Custom Product Request</h1>
+        <div class = "bill border-0">
+         <form class = "d-flex flex-column" action="">
+                <div class="mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter Phone Number">
+                </div>
+                <div class="mb-3">
+                    <label for="product" class="form-label">Product Name</label>
+                    <input type="text" class="form-control" id="product" placeholder="Enter Product Name">
+                </div>
+                <div class="mb-3">
+                    <label for="cat" class="form-label">Select Category</label>
+                    <select name="" id="cat" class="form-control" placeholder = "Select Category Name">
+                        <option value="" selected>Select Category Name</option>
+                        <option value="1">1</option>
+                        <option value="1">2</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="product" class="form-label">Product Image</label>
+                    <div class="upload-area" id="uploadArea">
+                            <input type="file" id="fileInput" accept=".png,.jpg,.gif" hidden>
+                            
+                            <div class="upload-preview">
+                                <i class="fa-regular fa-image upload-icon"></i>
+                            </div>
 
+                            <p class="upload-text">
+                                <strong class = "black">Upload a file</strong> or drag and drop
+                            </p>
+                            <p class="upload-hint">PNG, JPG, GIF Up To 10MB</p>
+                        </div>
+                </div>
+             <button class = "btn bg-primery white w-100 py-3">Submit Request</button>
+
+
+        </form>
+       </div>
+       <!-- end tab -->
 </div>
 
     
@@ -291,7 +336,31 @@
       <p>Company Number: 546987552</p>
     </div>
   </footer>
+<script>
+    // click to open file picker
+document.getElementById('uploadArea').addEventListener('click', () => {
+  document.getElementById('fileInput').click();
+});
 
+// drag and drop
+const uploadArea = document.getElementById('uploadArea');
+
+uploadArea.addEventListener('dragover', (e) => {
+  e.preventDefault();
+  uploadArea.style.background = 'rgba(249, 115, 22, 0.1)';
+});
+
+uploadArea.addEventListener('dragleave', () => {
+  uploadArea.style.background = '';
+});
+
+uploadArea.addEventListener('drop', (e) => {
+  e.preventDefault();
+  uploadArea.style.background = '';
+  const file = e.dataTransfer.files[0];
+  console.log('Dropped file:', file.name);
+});
+</script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/script.js"></script>
 
