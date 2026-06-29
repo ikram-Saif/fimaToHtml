@@ -2300,6 +2300,10 @@ flatpickr-day.selected,
   background-color: #FAFAFA;
   border-color: #F4F4F4;
 }
+.bill .calender-icon{
+ background-color: #FAFAFA;
+ border:0
+}
 .step .done{
     background-color: var(--primary-color);
     color: #fff;

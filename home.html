@@ -990,38 +990,6 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
         <script src = "assets/js/script.js"></script>
-        <script>document.addEventListener('DOMContentLoaded', function () {
-
-  const submenuToggle = document.querySelectorAll('.dropdown-submenu .submenu-toggle');
-
-  submenuToggle.forEach(function (toggle) {
-    toggle.addEventListener('click', function (e) {
-
-      if (window.innerWidth < 768) {
-        // mobile — click to toggle
-        e.preventDefault();
-        this.closest('.dropdown-submenu').classList.toggle('show');
-      }
-
-    });
-  });
-
-  // desktop — hover to show
-  document.querySelectorAll('.dropdown-submenu').forEach(function (submenu) {
-    submenu.addEventListener('mouseenter', function () {
-      if (window.innerWidth >= 768) {
-        this.classList.add('show');
-      }
-    });
-
-    submenu.addEventListener('mouseleave', function () {
-      if (window.innerWidth >= 768) {
-        this.classList.remove('show');
-      }
-    });
-  });
-
-});</script>
 
 </body>
 

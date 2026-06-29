@@ -373,26 +373,7 @@
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script src="assets/js/script.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-
-      // Flatpickr
-      flatpickr("#date", {
-        dateFormat: "d/m/Y",
-        minDate: "today",
-        disableMobile: true
-      });
-
-      // Delivery checkbox toggle
-      document.getElementById('deliveryCheck').addEventListener('change', function () {
-        const fields = document.getElementById('deliveryFields');
-        if (this.checked) {
-          fields.classList.remove('show');
-        } else {
-          fields.classList.add('show');
-        }
-      });
-
-    });
+   
   </script>
 
 </body>
