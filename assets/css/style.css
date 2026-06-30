@@ -786,7 +786,7 @@ small{
 
 .hero-main{
 
-    min-height:500px;
+    min-height:534px;
 }
 
 .hero-content{
@@ -853,7 +853,7 @@ small{
 
 .hero-main{
 
-    min-height:480px;
+    min-height:534px;
 }
 
 .hero-content{
@@ -924,6 +924,7 @@ small{
 .hero-main{
     text-align: center;
     padding: 24px 0;
+    min-height: 400px;
 }
 
 .hero-content{
@@ -984,7 +985,7 @@ small{
 
 .btn-warning-md,
 .btn-warning-sm{
-    width: 100%;
+    /* width: 100%; */
     padding: 12px;
 }
 
@@ -1288,6 +1289,23 @@ small{
  padding-right: 60px;
  padding-bottom: 50px;
 }
+@media (max-width: 767px) {
+  .adv .carousel-item {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .adv .carousel-item {
+    padding-top: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 20px;
+  }
+}
 .adv .carousel-item .caption{
     padding:30px;
     width:629px
@@ -1300,12 +1318,25 @@ small{
     
 
 }
+
+
 .adv .carousel-item .caption p{
     font-size: var(--display-xs);
     font-weight: 400;
       color: #161616;
        margin-bottom: 22px;
 
+}
+@media (max-width: 575px) {
+  .adv .carousel-item .caption h1 {
+    font-size: var(--display-sm);
+    margin-bottom: 8px;
+  }
+
+  .adv .carousel-item .caption p {
+    font-size: var(--body-md);
+    margin-bottom: 8px;
+  }
 }
 .adv .carousel-item .caption a{
     width:fit-content
@@ -1396,6 +1427,11 @@ font-weight: 300;
 footer .about p{
     width:500px;
     font-size: var(--text-medium);
+}
+@media (max-width: 991px) {
+  footer .about p {
+    width: 100%;
+  }
 }
 footer .title{
     font-size: var(--text-lg);
