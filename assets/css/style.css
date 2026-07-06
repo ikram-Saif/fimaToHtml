@@ -41,6 +41,11 @@ body{
 .bg-primery {
     background-color: var(--primary-color);
 }
+.btn-outline-primary{
+    border:1px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: #fff;
+}
 .primery-color{
     color: var(--primary-color);
 }
@@ -49,6 +54,12 @@ body{
 }
 .black{
     color: #000;
+}
+.bg-dark{
+    background-color: #0F172A;
+}
+.boeder-dark{
+    border:1px solid #0F172A;
 }
 
 * {
@@ -2519,3 +2530,247 @@ font-weight: 400;
     color:#2F2F2F;
     font-size: var(--text-lg);
 }
+/* suplier */
+/* dashboard */
+aside {
+  width: 315px;
+  height: 100vh;
+  padding: 24px;
+  padding-right: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.dashboard-logo {}
+
+.dashboard-logo img {}
+
+aside hr {
+  border-bottom: 1px solid #686868;
+}
+
+aside .aside-menu {
+  list-style: none;
+  padding: 0;
+}
+
+aside .aside-menu li {
+  color: #D0D0D0;
+  padding: 16px;
+}
+
+aside .aside-menu li a {
+  text-decoration: none;
+  color: #D0D0D0;
+  font-size: var(--text-medium);
+  padding: 10px;
+}
+
+aside .aside-menu .active {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 8px;
+}
+
+aside .aside-menu .active a {
+  color: #fff;
+}
+
+aside .accordion .accordion-button {
+  color: #949494;
+  font-size: 14px;
+  border: 0;
+}
+
+.accordion-button:focus {
+  box-shadow: unset !important;
+}
+
+.accordion-button::after {
+  color: #949494;
+}
+
+aside .accordion-button:not(.collapsed)::after {
+  background-image: url("../images/icone/arowup.png");
+}
+
+/* ── Main content ── */
+main {
+  margin-left: 315px;
+  width: calc(100% - 315px);
+  min-height: 100vh;
+  padding: 24px;
+}
+
+/* ── Toggle button ── */
+.sidebar-toggle {
+  display: none;
+  position: fixed;
+  top: 12px;
+  left: 16px;
+  z-index: 1100;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar-expand-btn,
+.sidebar-close-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  z-index: 1100;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(8px);
+}
+
+.sidebar-close-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 991.98px) {
+  .sidebar-toggle {
+    top: 16px;
+    left: 16px;
+    right: auto;
+  }
+
+  .sidebar-close-btn {
+    top: 14px;
+    right: 12px;
+    left: auto;
+  }
+}
+
+/* ── Overlay ── */
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.sidebar-overlay.active {
+  display: block;
+}
+
+/* ── Mobile ── */
+@media (max-width: 991.98px) {
+  aside {
+    transform: translateX(-100%);
+  }
+
+  aside.open {
+    transform: translateX(0);
+  }
+
+  main {
+    margin-left: 0;
+    width: 100%;
+    padding: 70px 16px 24px;
+    transition: margin-left 0.3s ease, width 0.3s ease, opacity 0.3s ease;
+  }
+
+  main.shifted {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+    opacity: 0.95;
+  }
+
+  .sidebar-toggle {
+    display: block;
+  }
+
+  body.sidebar-open .sidebar-toggle {
+    display: none;
+  }
+
+  .sidebar-expand-btn {
+    display: flex;
+    position: absolute;
+    top: 16px;
+    right: -12px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: #fff;
+    z-index: 1100;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  }
+
+  aside.open .sidebar-expand-btn {
+    display: none;
+  }
+
+  aside .sidebar-close-btn {
+    display: none;
+  }
+
+  aside.open .sidebar-close-btn {
+    display: flex;
+  }
+}
+main .right-menu{
+    list-style: none;
+    padding: 0;
+
+}
+.right-menu .notifi{
+    position: relative;
+}
+.right-menu .notifi .number{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 10px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-menu .dropdown button{
+   width: 64px;
+   height: 64px;
+   border-radius: 50%;
+   padding: 0;
+   border:0
+    
+}
+.right-menu .dropdown button img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main .title{
+    font-size: var(--display-xs);
+    color:#161616;
+}
+main hr{
+    border:1px solid #E1E1E1;
+}
+    
