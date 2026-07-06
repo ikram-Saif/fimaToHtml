@@ -376,7 +376,7 @@ body{
     color: #fff !important;
 }
 
-.navbar .icon-menu .nav-link:hover {
+nav .icon-menu .nav-link:hover {
     color: var(--primary-color) !important;
 }
 
