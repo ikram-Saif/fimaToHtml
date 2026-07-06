@@ -22,32 +22,20 @@
 <body>
     <header>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
-            <div class="container-fluid">
-
-                <!-- Logo -->
+        <nav>
+            <div class = "container-fluid d-flex align-items-center justify-content-between bg-dark flex-wrap">
+                 <!-- Logo -->
                 <a class="navbar-brand" href="#">
                     <img src="assets/images/Logo(1).png" alt="Logo">
                 </a>
-
-                <!-- Mobile Toggle Button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Collapsible Content -->
-                <div class="collapse navbar-collapse" id="navbarScroll">
-
-                    <!-- Search -->
+                <!-- Search -->
                     <form class="d-flex navbar-search mx-auto">
                         <input class="form-control search-input" type="search" placeholder="Search for anything...">
                         <button class="search-btn bg-white border-0 px-3" type="submit">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
                     </form>
-
+                    <div class = "d-flex flex-row justify-content-between align-items-center">
                     <!-- Switch -->
                     <div class="form-check form-switch custom-switch navbar-switch">
                         <input class="form-check-input" type="checkbox" id="vatSwitch" checked>
@@ -77,13 +65,10 @@
                         </ul>
                     </li>
                     </ul>
+                    </div>
 
-                </div><!-- /.navbar-collapse -->
-
-            </div><!-- /.container-fluid -->
-
+            </div>
         </nav>
-
     </header>
     <section class="main-menu-section">
     <div class="container-fluid d-flex align-items-center justify-content-between gap-2 main-menu">
@@ -318,9 +303,9 @@
                     Shop the latest newly added featured products
                 </small>
             </div>
-            <div class="taps d-flex flex-column flex-sm-row align-items-end align-items-sm-end justify-content-sm-between gap-2">
+            <div class="taps d-flex flex-column flex-sm-row align-items-end align-items-sm-end justify-content-md-between gap-2">
                 <ul class="list-unstyled d-flex d-flex flex-wrap mb-0">
-                    <li><a class = "active">All Product</a></li>
+                    <li><a class = "active">All Products</a></li>
                     <li><a>Insulation Boards</a></li>
                     <li><a>Timber</a></li>
                     <li><a>Insulation Slabs</a></li>
@@ -338,7 +323,7 @@
                     <div class = "product-img">
                     <img src="assets/images/product/prod2.jpg" alt="" class="">
                         <div class = "badge d-flex align-items center justify-content-center">
-                            <span>core</span>
+                            <span>Core</span>
                             <img src="assets/images/icone/Polygon 1.png" alt="">
 
                         </div>
@@ -378,7 +363,7 @@
                     <img src="assets/images/product/prod8.jpg" alt="" class="">
 
                     <div class = "badge d-flex align-items center justify-content-center">
-                            <span>core</span>
+                            <span>Core</span>
                             <img src="assets/images/icone/Polygon 1.png" alt="">
 
                         </div>
@@ -453,7 +438,7 @@
                     <div class = "product-img">
                     <img src="assets/images/product/prod6.jpg" alt="" class="">
                     <div class = "badge d-flex align-items center justify-content-center">
-                            <span>core</span>
+                            <span>Core</span>
                             <img src="assets/images/icone/Polygon 1.png" alt="">
 
                         </div>
@@ -635,7 +620,7 @@
 
  <section class = "container-fluid">
     <div class="cat">
-        <div class="header d-flex align-items-end justify-content-between flex-wrap">
+        <div class="header d-flex align-items-end justify-content-between flex-wrap align-items-sm-end">
                 <div class="title">
                     <h1>Shop by categories</h1>
                     <p>Explore the latest featured products added recently</p>
@@ -716,7 +701,7 @@
                 </a>
                 </div>
                 <div class = "slider-img">
-                    <img src="assets/images/slider/slid1.png" alt="">
+                    <img src="assets/images/slider/slid1.png" alt="" class="image-fluid">
                 </div>
             </div>
         </div>      
@@ -906,7 +891,7 @@
  </section>
  <footer >
     <div class = "container-fluid">
-    <div class="d-flex justify-content-between flex-wrap">
+    <div class="d-flex justify-content-between flex-wrap gap-md-4">
         <div class="about">
             <h3 class="title">About Us</h3>
             <p>Your trusted destination for construction materials and building supplies. We help contractors, businesses, and homeowners find the right products, receive competitive supplier offers, and manage orders with confidence.</p>
@@ -921,15 +906,15 @@
          
         </div>
         <div class="links d-flex flex-column gap-2">
-             <h3 class = "title">About Us</h3>
+             <h3 class = "title">Important Links</h3>
                 <a href=""><i class="fa-solid fa-angles-right"></i>About Us</a>
                 <a href=""><i class="fa-solid fa-angles-right"></i>Privacy Policy</a>
                 <a href=""><i class="fa-solid fa-angles-right"></i>Terms & Conditions </a>
                  <a href=""><i class="fa-solid fa-angles-right"></i>Customer Support </a>
            
         </div>
-        <div class="contactUs d-flex flex-column gap-2">
-             <h3 class="title">About Us</h3>
+        <div class="d-flex flex-column gap-2">
+             <h3 class="title">Contact Us</h3>
          
                         
                        <a href=""> 
@@ -948,18 +933,20 @@
 
         </div>
         <div class="social d-flex flex-column gap-2">
-             <h3 class="title">About Us</h3>
+             <h3 class="title">Follow Us</h3>
            <div class = "d-flex flex-wrap gap-2">
+                 <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                 <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter primery-color"></i></a>
+                <a href=""><i class="fa-brands fa-square-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-square-linkedin"></i></a>
                 <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                <a href=""><i class="fa-brands fa-twitter primery-color"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                 <a><i class="fa-brands fa-snapchat"></i></a>
            </div>
                
         </div>
     </div>
     </div>
-    <div class="second-footer">
+    <div class="second-footer gap-sm-2">
             <p>© 2026. All Rights Reserved. Built for Master Material.</p>
             <div class="d-flex gap-2 align-items-baseline">
                 <img src="assets/images/icone/pay.png" alt=""/>
