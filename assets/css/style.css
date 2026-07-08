@@ -2603,7 +2603,7 @@ main {
   margin-left: 315px;
   width: calc(100% - 315px);
   min-height: 100vh;
-  padding: 24px;
+  /* padding: 24px; */
 }
 
 /* ── Toggle button ── */
@@ -2683,14 +2683,15 @@ main {
     transform: translateX(0);
   }
 
-  main {
+  .suplier-dashboard {
     margin-left: 0;
     width: 100%;
     padding: 70px 16px 24px;
     transition: margin-left 0.3s ease, width 0.3s ease, opacity 0.3s ease;
+    
   }
 
-  main.shifted {
+  .suplier-dashboard .shifted {
     margin-left: 220px;
     width: calc(100% - 220px);
     opacity: 0.95;
@@ -2700,7 +2701,7 @@ main {
     display: block;
   }
 
-  body.sidebar-open .sidebar-toggle {
+  .suplier-dashboard .sidebar-open .sidebar-toggle {
     display: none;
   }
 
@@ -2730,15 +2731,15 @@ main {
     display: flex;
   }
 }
-main .right-menu{
+.suplier-dashboard .right-menu{
     list-style: none;
     padding: 0;
 
 }
-.right-menu .notifi{
+.suplier-dashboard .right-menu .notifi{
     position: relative;
 }
-.right-menu .notifi .number{
+.suplier-dashboard .right-menu .notifi .number{
     position: absolute;
     top: -8px;
     right: -8px;
@@ -2753,7 +2754,7 @@ main .right-menu{
     justify-content: center;
 }
 
-.right-menu .dropdown button{
+.suplier-dashboard .right-menu .dropdown button{
    width: 64px;
    height: 64px;
    border-radius: 50%;
@@ -2761,16 +2762,190 @@ main .right-menu{
    border:0
     
 }
-.right-menu .dropdown button img{
+
+.suplier-dashboard .right-menu .dropdown button img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-main .title{
+.suplier-dashboard .title{
     font-size: var(--display-xs);
     color:#161616;
 }
-main hr{
+.suplier-dashboard hr{
     border:1px solid #E1E1E1;
+    margin:0
 }
-    
+.dashboardContent{
+    background-color: lightgray;
+    padding: 24px
+}
+.suplier-dashboard .dashboardContent .greeting h1{
+    font-size: var(--display-sm);
+    font-weight: 600;
+    font-style: semi-bold;
+    color:#161616;
+}
+@media (max-width: 768px) {
+    .suplier-dashboard .dashboardContent .greeting h1 {
+        font-size: var(--display-xs, 1.5rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .suplier-dashboard .dashboardContent .greeting h1 {
+        font-size: 1.25rem;
+        line-height: 1.3;
+    }
+}
+.suplier-dashboard .dashboardContent .greeting p{
+    font-size: var(--text-medium);
+    color:#949494
+}
+.suplier-dashboard .dashboardContent .cards .card {
+    background-color: #FEEAE0;
+    padding: 24px;
+    border-radius: 16px;
+    color: #1C1C1C;
+    flex: 1 1 calc((100% - 3 * 1rem) / 4); /* 4 per row, gap = 1rem (gap-3) */
+    min-width: 220px; /* prevents cards from getting too squished */
+}
+.suplier-dashboard .dashboardContent .cards .card h6{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.suplier-dashboard .dashboardContent .cards .card .counter{
+ font-size: 24px;
+ line-height: 36px;
+ font-weight: 600;
+}
+.suplier-dashboard .dashboardContent .cards .card p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+/* Tablet: 2 per row */
+@media (max-width: 992px) {
+    .suplier-dashboard .cards .card {
+        flex: 1 1 calc((100% - 1rem) / 2);
+    }
+}
+
+/* Mobile: 1 per row */
+@media (max-width: 576px) {
+    .suplier-dashboard .cards .card {
+        flex: 1 1 100%;
+    }
+}
+/* chart */
+/* .apexcharts-line-series path:nth-child(2) {
+  stroke: var(--primary-color)!important;
+} */
+ .card-title-lg{
+    font-size: 14px;
+    color:#161616;
+    font-weight: 600;
+ }
+ .legend-dot{
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  display:inline-block;
+  margin-right:6px;
+}
+.legend-item{
+  display:flex;
+  align-items:center;
+  font-size:12px;
+  color:#161616;
+}
+.legend-value{
+  font-weight:600;
+  color:#161616;
+  margin-left:6px;
+}
+.period-select{
+  font-size:14px;
+  border:1px solid #FAFAFA;
+  border-radius:8px;
+  padding:8px 6px 8px 12px;
+  color:#0F172A;
+  background:#fff;
+  font-weight:600;
+}
+.first-chart,
+.second-chart {
+  background-color: #fff;
+  min-width: 0; /* important: prevents flex children from overflowing with chart canvases inside */
+}
+.first-chart{
+   flex: 1 1 73%;
+    background-color: #fff;
+}
+.second-chart{
+  
+    background-color: #fff;
+     flex: 1 1 25%;
+
+}
+/* the div ApexCharts renders into must be allowed to shrink */
+#chart1,
+#chart2 {
+  width: 100%;
+}
+#chart2{
+     width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .first-chart,
+  .second-chart {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+}
+
+.second-chart .data .sales-legend-row{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    padding: 12px 24px;
+    gap:12px
+}
+.opportunites {
+    flex-grow: 1 1 calc((100% - 16px) / 2);
+    min-width: calc((100% - 16px) / 2);
+}
+.opportunites .title h6{
+    color:#161616;
+    font-size: var(--text-medium);
+}
+.opportunites .title a{
+    color: var(--primary-color);
+    font-size: var(--text-sm);
+    text-decoration: none;
+}
+.opportunites .card-opp{
+    background-color: #fff;
+    border-radius: 8px;
+}
+.opportunites .card-opp .left span{
+font-size:12px;
+color:#949494
+}
+.opportunites .card-opp .left .title{
+    font-size: 12px;
+    color:#161616;
+    font-weight: 600;
+}
+.opportunites .card-opp .right span{
+font-size:12px;
+color:#949494
+}
+.opportunites .card-opp .right .price{
+font-size:12px;
+font-weight: 600;   
+color:#161616
+}

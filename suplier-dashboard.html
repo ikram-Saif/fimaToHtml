@@ -70,8 +70,9 @@
     </aside>
 
     <!-- Main content -->
-    <main id="mainContent">
-      <div class = "d-flex justify-content-between align-items-center px-4">
+    <main class="suplier-dashboard">
+      <!-- header -->
+      <div class = "d-flex justify-content-between align-items-center px-4 bg-white">
         <h1 class = "title">Dashboard</h1>
         <ul class="right-menu d-flex align-items-center gap-3">
             <li><img src="assets/images/icone/repeat.png" alt=""></li>
@@ -95,6 +96,165 @@
         </ul>
       </div>
       <hr/>
+      <!-- end header -->
+       <!-- content -->
+      <div class="dashboardContent">
+       <div class = "greeting">
+      <h1>Good morning, Ahmed 👋</h1>
+      <p><span>Tuesday, June 24, 2026 ·</span><span> 3 new opportunities nearby</span></p>
+      </div>
+
+      <div class="cards d-flex gap-3 py-4 flex-wrap">
+        <div class = card>
+          <h6>Revenue MTD</h6>
+          <h2 class = "counter">4,374</h2>
+          <p><span style="color:#22C55E;">+12.5%</span> VS Last Month <img src="assets/images/icone/IconSet.png"></p>
+        </div>
+         <div class = card>
+          <h6>Active Orders</h6>
+          <h2 class = "counter">4,374</h2>
+          <p> 2 delivering today </p>
+        </div>
+         <div class = card>
+          <h6>Pending Offers</h6>
+          <h2 class = "counter">5</h2>
+          <p> 5.3M total value </p>
+        </div>
+        <div class = card>
+          <h6>Win Rate</h6>
+          <h2 class = "counter">68%</h2>
+          <p><span style="color:#22C55E;">+12.5%</span> VS Last Month <img src="assets/images/icone/IconSet.png"></p>
+        </div>
+
+      </div>
+      <!-- charts -->
+       <div class="d-flex gap-3 flex-wrap align-items-center">
+        <div class="first-chart d-flex justify-content-between align-items-start flex-wrap gap-3 mb-3 p-4">
+
+        <!-- LEFT SIDE: title + legend items -->
+            <div class="d-flex align-items-center gap-4 flex-wrap">
+              <span class="card-title-lg">Revenue</span>
+
+              <div class="legend-item">
+                <span class="legend-dot" style="background:#161616;"></span>
+                Current Week <span class="legend-value">$58,211</span>
+              </div>
+
+              <div class="legend-item">
+                <span class="legend-dot" style="background:#F97316;"></span>
+                Previous Week <span class="legend-value">$68,768</span>
+              </div>
+            </div>
+
+            <!-- RIGHT SIDE: dropdown -->
+            <select class="period-select">
+              <option>Last 30 Days</option>
+              <option>Last 7 Days</option>
+              <option>Last 90 Days</option>
+            </select>
+
+
+              <div id="chart1"></div>
+              </div>
+            <!-- end first chart -->
+             <!-- start secode chart -->
+              <div class="second-chart d-flex flex-column align-items-center flex-wrap gap-3 mb-3 p-4">
+                
+                <div id="chart2"></div>
+                <div class ="data">
+                  <div class="sales-legend-row d-flex justify-content-between">
+                    <span class="sales-legend-label"><span class="legend-dot" style="background:#1C1C1C;"></span>Cement</span>
+                    <span class="sales-legend-value">$300.56</span>
+                  </div>
+                  <div class="sales-legend-row d-flex justify-content-between">
+                    <span class="sales-legend-label"><span class="legend-dot" style="background:#3F527B;"></span>Steel</span>
+                    <span class="sales-legend-value">$135.18</span>
+                  </div>
+                  <div class="sales-legend-row d-flex justify-content-between">
+                    <span class="sales-legend-label"><span class="legend-dot" style="background:#F97316;"></span>Sand &amp; Aggregate</span>
+                    <span class="sales-legend-value">$154.02</span>
+                  </div>
+                  <div class="sales-legend-row d-flex justify-content-between">
+                    <span class="sales-legend-label"><span class="legend-dot" style="background:#6F82A6;"></span>Timber</span>
+                    <span class="sales-legend-value">$48.96</span>
+                  </div>
+
+                </div>
+                
+              </div>
+              </div>
+              <!-- end charts -->
+               <!-- start opprtunity and activites section -->
+                <div class  = "d-flex gap-3 flex-wrap align-items-center">
+                  <div class = "opportunites d-flex flex-column gap-3">
+                    <div class="title d-flex justify-content-between align-items-center">
+                      <h6>Opportunities</h6>
+                      <a class="view-all">See All <img src="assets/images/icone/angle-right.png" alt="" class = "ms-2"></a>
+                    </div>
+                    <div class = "card-opp d-flex justify-content-between align-items-center p-3">
+                      <div class = "left d-flex flex-column gap-1">
+                        <span>ORD-2819</span>
+                        <h6 class = "title">MOT Type 1 Sub Base Bulk Bag (800kg)</h6>
+                        <span><img src="assets/images/icone/tabler_location-filled.png" alt=""> 3.2 ml · Jul 2, 2026</span>
+                      </div>
+                      <div class = "right d-flex flex-column gap-1">
+                        <span class = "price"> £49.90</span>
+                        <span>14 mins ago</span>
+                      </div>
+
+                    </div>
+                     <div class = "card-opp d-flex justify-content-between align-items-center p-3">
+                      <div class = "left d-flex flex-column gap-1">
+                        <span>ORD-2819</span>
+                        <h6 class = "title">MOT Type 1 Sub Base Bulk Bag (800kg)</h6>
+                        <span><img src="assets/images/icone/tabler_location-filled.png" alt=""> 3.2 ml · Jul 2, 2026</span>
+                      </div>
+                      <div class = "right d-flex flex-column gap-1">
+                        <span class = "price"> £49.90</span>
+                        <span>14 mins ago</span>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                  <div class = "opportunites d-flex flex-column gap-2">
+                    <div class="title d-flex justify-content-between align-items-center">
+                      <h6>Active Deliveries</h6>
+                      <a class="view-all">Manage <img src="assets/images/icone/angle-right.png" alt=""class = "ms-2"></a>
+                    </div>
+                    <div class = "card-opp d-flex justify-content-between align-items-center p-3">
+                      <div class = "left d-flex flex-column gap-1">
+                        <span>ORD-2819</span>
+                        <h6 class = "title">MOT Type 1 Sub Base Bulk Bag (800kg)</h6>
+                        <span><img src="assets/images/icone/delivery.png" alt=""></span>
+                      </div>
+                      <div class = "right d-flex flex-column gap-1">
+                        <span class = "price"> £49.90</span>
+                        <span>14 mins ago</span>
+                      </div>
+
+                    </div>
+                     <div class = "card-opp d-flex justify-content-between align-items-center p-3">
+                      <div class = "left d-flex flex-column gap-1">
+                        <span>ORD-2819</span>
+                        <h6 class = "title">MOT Type 1 Sub Base Bulk Bag (800kg)</h6>
+                        <span><img src="assets/images/icone/tabler_location-filled.png" alt=""> 3.2 ml · Jul 2, 2026</span>
+                      </div>
+                      <div class = "right d-flex flex-column gap-1">
+                        <span class = "price"> £49.90</span>
+                        <span>14 mins ago</span>
+                      </div>
+
+                    </div>
+                  </div>
+                    
+                 
+                </div>
+
+        
+        <!-- end content -->
+         </div>
     </main>
 
   </div>
@@ -172,6 +332,125 @@
         });
       });
     });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script>
+   var options = {
+  series: [
+    {
+      name: 'current week',
+      data: [5,10, 18, 15, 10, 12, 15, 20, 22],
+    },
+     {
+      name: 'previous week',
+      data: [12,10, 8, 8, 10, 12, 13, 14, 15],
+    },
+  ],
+  stroke: {
+    width: 5,
+    curve: 'smooth',
+  },
+    forecastDataPoints: {
+    count: 2,
+  },
+  colors: ["#F97316", "#161616"],
+  chart: {
+    height: 350,
+    width:'100%',
+    type: 'line',
+    zoom: {
+      enabled: false,
+    },
+     toolbar: {
+    show: false
+  },
+  dropShadow: {
+    enabled: true,
+    enabledOnSeries: [1],
+    top: 4,        // vertical offset
+    left: 0,       // horizontal offset
+    blur: 10,       // how soft/spread the shadow is
+    opacity: 0.2, // how visible the shadow is
+    color: "#FEEAE0"  // shadow color
+  }
+  },
+  dataLabels: {
+    enabled: false,
+  },
+ 
+  grid: {
+    row: {
+      colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+      opacity: 0.5,
+    },
+  },
+  xaxis: {
+    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+  },
+  yaxis: {
+    min: 0,
+    max: 30,
+    tickAmount: 3,
+    labels: {
+      formatter: (v) => v === 0 ? "0" : v + "M",
+      style: { colors: "#98A2B3", fontSize: "13px" }
+    }
+  },
+  tooltip: {
+    shared: false,
+    y: { formatter: (v) => v != null ? "$" + v.toFixed(1) + "M" : "" }
+  },
+  legend: {
+  show: false
+}
+}
+
+var chart = new ApexCharts(document.querySelector('#chart1'), options)
+chart.render()
+
+
+  </script>
+  <script>
+  var options = {
+  series: [10, 30, 40, 20],
+  colors:["#6F82A6", "#F97316", "#0F172A", "#3F527B"],
+  chart: {
+     width: '100%',
+    type: 'donut',
+    height: 235,
+  },
+  labels: ['Team A', 'Team B', 'Team C', 'Team D'],
+  legend: {
+    show: false,
+  },
+    dataLabels: {
+    enabled: false   // <-- this removes the % labels on the segments
+  },
+  title: {
+     text: 'Total Sales',
+     align: 'center',
+     style: {
+    fontSize: '14px',
+    fontWeight: 600,
+    fontFamily: 'inherit',
+    color: '#1C1C1C'
+  }
+  },
+ 
+  responsive: [
+    {
+      breakpoint: 480,
+      options: {
+        chart: {
+          width: 320,
+        },
+      },
+    },
+  ],
+}
+
+var chart = new ApexCharts(document.querySelector('#chart2'), options)
+chart.render()
   </script>
 
 </body>
