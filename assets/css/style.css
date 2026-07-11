@@ -3468,6 +3468,12 @@ font-weight: 400;
     height: 152px;
     border-radius: 16px;
 }
+.modal-body .form-control:focus,
+.modal-body textarea.form-control:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid #E4E4E4 !important;
+}
 .modal-footer button{
     border-radius: var(--radius-sm);
     font-size: var(--text-medium);
@@ -3495,4 +3501,45 @@ font-weight: 400;
 @media (max-width: 768px) {
      .custom-modal .btn-close{
     display:block}
+}
+/* accept toast */
+.custom-toast {
+    background-color: #fff;
+    border: 1px solid #E7E7E7;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    padding: 16px;
+    min-width: 330px;
+}
+
+.custom-toast .toast-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #74DB0B;
+    color: #74DB0B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.custom-toast .toast-body {
+    color: #272525;
+    font-weight: 500;
+    font-size: var(--text-medium);
+    padding: 0;
+}
+
+.custom-toast .toast-close-btn {
+    background: none;
+    border: none;
+    color: #8E8E93;
+    font-size: 16px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

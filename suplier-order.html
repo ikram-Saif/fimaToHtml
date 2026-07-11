@@ -15,10 +15,11 @@
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="assets/css/style.css">
+   
 
 </head>
 <body>
@@ -362,7 +363,7 @@
           <div class = "d-flex flex-column align-items-end align-self-start py-0">
             <h5 class="quant">500</h5>
             <small style="font-size: 12px;">bags</small>
-             <span class = "submit-offer pt-2"data-bs-toggle="modal" data-bs-target="#offerModal">Submit Offer<i class="fa-solid fa-play"></i></span>
+             <span class = "submit-offer pt-2"data-bs-toggle="modal" data-bs-target="#submitOfferModal">Submit Offer<i class="fa-solid fa-play"></i></span>
           </div>
         </div>
         <div class = "d-flex justify-content-between" style="margin-bottom: 12px;">
@@ -373,14 +374,14 @@
           <div class = "d-flex flex-column align-items-end align-self-start py-0">
             <h5 class="quant">20</h5>
             <small style="font-size: 12px;">tonnes</small>
-             <span class = "submit-offer pt-2"data-bs-toggle="modal" data-bs-target="#offerModal">Submit Offer<i class="fa-solid fa-play"></i></span>
+             <span class = "submit-offer pt-2"data-bs-toggle="modal" data-bs-target="#submitOfferModal">Submit Offer<i class="fa-solid fa-play"></i></span>
           </div>
         </div>
         </div>
         <!-- buttons pinned to bottom -->
     <div class="d-flex gap-3" style = "margin-top: 140px;">
-      <button type="button" class="flex-fill py-3 acceptbtn">Accept </button>
-      <button type="button" class="flex-fill py-3 rejectbtn">Reject</button>
+      <button type="button" class="flex-fill py-3 acceptbtn" id="acceptToastBtn" >Accept </button>
+      <button type="button" class="flex-fill py-3 rejectbtn" data-bs-toggle="modal" data-bs-target="#rejectOfferModal">Reject</button>
     </div>
 
       <!-- end ofcanvas body -->
@@ -388,8 +389,8 @@
       
     
     </div>
-    <!-- start modal -->
-    <div class="modal fade custom-modal p-4" id="offerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- start submit modal -->
+    <div class="modal fade custom-modal p-4" id="submitOfferModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content p-4">
       <div class="modal-header pb-3">
@@ -441,7 +442,7 @@
         </div>
         <div class="message d-flex flex-column gap-2">
           <span class="title">Message to Customer (Optional)</span>
-          <textarea name="" id="" class = "forn-control"></textarea>
+          <textarea name="" id="" class = "form-control"></textarea>
         </div>
 
       </div>
@@ -450,6 +451,71 @@
       </div>
     </div>
   </div>
+</div>
+<!-- end submit modal -->
+ <!-- start reject modal -->
+    <div class="modal fade custom-modal p-4" id="rejectOfferModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content p-4">
+      <div class="modal-header pb-3">
+        <div class="modal-title">
+           <span>ORD-2847</span>
+        <h1>Reject Your Offer</h1>
+       
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        
+      </div>
+      <div class="modal-body d-flex flex-column gap-4">
+        
+        <div class="message d-flex flex-column gap-2">
+          <span class="title">Reason for Rejection</span>
+          <textarea name="" id="" class = "form-control"></textarea>
+        </div>
+
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="bg-primery w-100 white border-0 py-3" id="rejectToastBtn">Confirm<i class="fa-solid fa-play"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end reject modal -->
+<!-- start accept toast -->
+ <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1100;">
+
+  <div class="toast custom-toast align-items-center border-0" role="alert" aria-live="assertive" aria-atomic="true" id="acceptToast">
+    <div class="d-flex align-items-center">
+      <div class="toast-icon">
+        <i class="bi bi-check-lg"></i>
+      </div>
+      <div class="toast-body">
+        Accept
+      </div>
+      <button type="button" class="toast-close-btn ms-auto" data-bs-dismiss="toast" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+  </div>
+
+</div>
+<!-- start reject toast -->
+ <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1100;">
+
+  <div class="toast custom-toast align-items-center border-0" role="alert" aria-live="assertive" aria-atomic="true" id="rejectToast">
+    <div class="d-flex align-items-center">
+      <div class="toast-icon">
+        <i class="bi bi-check-lg"></i>
+      </div>
+      <div class="toast-body">
+        Reject
+      </div>
+      <button type="button" class="toast-close-btn ms-auto" data-bs-dismiss="toast" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+  </div>
+
 </div>
     </main>
 
@@ -462,17 +528,59 @@
   <script src="assets/js/chaer.js"></script>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 <script>document.addEventListener('DOMContentLoaded', function () {
-    const modalEl = document.getElementById('offerModal'); // replace with your modal's id
     const offcanvasEl = document.getElementById('offcanvasExample');
+    const modals = document.querySelectorAll('.modal');
+    const toasts = document.querySelectorAll('.toast');
 
-    if (modalEl && offcanvasEl) {
-        modalEl.addEventListener('show.bs.modal', function () {
-            const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasEl);
-            if (offcanvasInstance) {
-                offcanvasInstance.hide();
-            }
+    if (offcanvasEl) {
+        modals.forEach(function (modalEl) {
+            modalEl.addEventListener('show.bs.modal', function () {
+                const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasEl);
+                if (offcanvasInstance) {
+                    offcanvasInstance.hide();
+                }
+            });
+        });
+
+        toasts.forEach(function (toastEl) {
+            toastEl.addEventListener('show.bs.toast', function () {
+                const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasEl);
+                if (offcanvasInstance) {
+                    offcanvasInstance.hide();
+                }
+
+                modals.forEach(function (modalEl) {
+                    const modalInstance = bootstrap.Modal.getInstance(modalEl);
+                    if (modalInstance) {
+                        modalInstance.hide();
+                    }
+                });
+            });
         });
     }
-});</script>
+});
+</script>
+<script>
+const acceptToastTrigger = document.getElementById('acceptToastBtn')
+const acceptToastEl = document.getElementById('acceptToast')
+
+if (acceptToastTrigger && acceptToastEl) {
+  const acceptToastBootstrap = bootstrap.Toast.getOrCreateInstance(acceptToastEl)
+  acceptToastTrigger.addEventListener('click', () => {
+    acceptToastBootstrap.show()
+  })
+}
+
+const rejectToastTrigger = document.getElementById('rejectToastBtn')
+const rejectToastEl = document.getElementById('rejectToast')
+
+if (rejectToastTrigger && rejectToastEl) {
+  const rejectToastBootstrap = bootstrap.Toast.getOrCreateInstance(rejectToastEl)
+  rejectToastTrigger.addEventListener('click', () => {
+    rejectToastBootstrap.show()
+  })
+}
+
+  </script>
 </body>
 </html>
