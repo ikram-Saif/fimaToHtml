@@ -362,7 +362,7 @@
           <div class = "d-flex flex-column align-items-end align-self-start py-0">
             <h5 class="quant">500</h5>
             <small style="font-size: 12px;">bags</small>
-             <span class = "submit-offer pt-2">Submit Offer<i class="fa-solid fa-play"></i></span>
+             <span class = "submit-offer pt-2"data-bs-toggle="modal" data-bs-target="#offerModal">Submit Offer<i class="fa-solid fa-play"></i></span>
           </div>
         </div>
         <div class = "d-flex justify-content-between" style="margin-bottom: 12px;">
@@ -373,7 +373,7 @@
           <div class = "d-flex flex-column align-items-end align-self-start py-0">
             <h5 class="quant">20</h5>
             <small style="font-size: 12px;">tonnes</small>
-             <span class = "submit-offer pt-2">Submit Offer<i class="fa-solid fa-play"></i></span>
+             <span class = "submit-offer pt-2"data-bs-toggle="modal" data-bs-target="#offerModal">Submit Offer<i class="fa-solid fa-play"></i></span>
           </div>
         </div>
         </div>
@@ -384,11 +384,73 @@
     </div>
 
       <!-- end ofcanvas body -->
-
       </div>
       
-      
+    
     </div>
+    <!-- start modal -->
+    <div class="modal fade custom-modal p-4" id="offerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content p-4">
+      <div class="modal-header pb-3">
+        <div class="modal-title">
+           <span>ORD-2847</span>
+        <h1 >Submit Your Offer</h1>
+       
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        
+      </div>
+      <div class="modal-body d-flex flex-column gap-4">
+        <div class = "d-flex flex-column">
+          <span class = "title py-2">Offer Amount (Materials)</span>
+          <div class = "offer-box"><i class="bi bi-currency-pound"></i> <span class = "amount">13024</span></div>
+          <span class="hint">Budget: £14,800</span>
+        </div>
+        <div class = "">
+        <span class = "title py-2">Estimated Delivery Time</span>
+        <div class = "d-time d-flex flex-wrap pt-2">
+          <div class = "day">Same day</div>
+          <div class = "day active">Next day</div>
+          <div class = "day">2-3 days</div>
+          <div class = "day">3-5 days</div>
+          <div class = "day">1 week</div>
+          <div class = "day">Custom</div>
+        </div>
+
+        </div>
+        <div class = "offer-summery">
+          <div class="summery-title pb-2">Offer Summary</div>
+          <div class = "d-flex justify-content-between py-2">
+            <h5>Materials offer</h5>
+            <span class="amount">£49.90</span>
+          </div>
+          <div class = "d-flex justify-content-between py-2">
+            <h5>Delivery fee</h5>
+            <span class="amount">£5</span>
+          </div>
+          <div class = "d-flex justify-content-between py-2">
+            <h5>VAT</h5>
+            <span class="amount">£5</span>
+          </div>
+          <hr>
+          <div class = "d-flex justify-content-between py-2">
+            <h5 class = "total">Total</h5>
+            <span class="amount">£59.90</span>
+          </div>
+        </div>
+        <div class="message d-flex flex-column gap-2">
+          <span class="title">Message to Customer (Optional)</span>
+          <textarea name="" id="" class = "forn-control"></textarea>
+        </div>
+
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="bg-primery w-100 white border-0 py-3">Submit Offer <i class="fa-solid fa-play"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
     </main>
 
   </div>
@@ -399,6 +461,18 @@
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
   <script src="assets/js/chaer.js"></script>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script>document.addEventListener('DOMContentLoaded', function () {
+    const modalEl = document.getElementById('offerModal'); // replace with your modal's id
+    const offcanvasEl = document.getElementById('offcanvasExample');
 
+    if (modalEl && offcanvasEl) {
+        modalEl.addEventListener('show.bs.modal', function () {
+            const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasEl);
+            if (offcanvasInstance) {
+                offcanvasInstance.hide();
+            }
+        });
+    }
+});</script>
 </body>
 </html>
