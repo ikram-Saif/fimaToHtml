@@ -105,3 +105,56 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const offcanvasEl = document.getElementById('offcanvasExample');
+    const modals = document.querySelectorAll('.modal');
+    const toasts = document.querySelectorAll('.toast');
+
+    if (offcanvasEl) {
+        modals.forEach(function (modalEl) {
+            modalEl.addEventListener('show.bs.modal', function () {
+                const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasEl);
+                if (offcanvasInstance) {
+                    offcanvasInstance.hide();
+                }
+            });
+        });
+
+        toasts.forEach(function (toastEl) {
+            toastEl.addEventListener('show.bs.toast', function () {
+                const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasEl);
+                if (offcanvasInstance) {
+                    offcanvasInstance.hide();
+                }
+
+                modals.forEach(function (modalEl) {
+                    const modalInstance = bootstrap.Modal.getInstance(modalEl);
+                    if (modalInstance) {
+                        modalInstance.hide();
+                    }
+                });
+            });
+        });
+    }
+});
+
+const acceptToastTrigger = document.getElementById('acceptToastBtn')
+const acceptToastEl = document.getElementById('acceptToast')
+
+if (acceptToastTrigger && acceptToastEl) {
+  const acceptToastBootstrap = bootstrap.Toast.getOrCreateInstance(acceptToastEl)
+  acceptToastTrigger.addEventListener('click', () => {
+    acceptToastBootstrap.show()
+  })
+}
+
+const rejectToastTrigger = document.getElementById('rejectToastBtn')
+const rejectToastEl = document.getElementById('rejectToast')
+
+if (rejectToastTrigger && rejectToastEl) {
+  const rejectToastBootstrap = bootstrap.Toast.getOrCreateInstance(rejectToastEl)
+  rejectToastTrigger.addEventListener('click', () => {
+    rejectToastBootstrap.show()
+  })
+}
+
