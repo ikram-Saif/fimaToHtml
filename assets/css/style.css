@@ -3627,3 +3627,43 @@ font-weight: 400;
     border-radius: var(--radius-sm);
     font-size: var(--text-medium);
 }
+/* deliveries page */
+.deliveries .delivery-accept{
+    font-size:12px;
+ color:#22C55E;
+ background-color:#22C55E1A;
+ padding:8px;
+ border-radius: 15px;
+ font-weight: 500;
+}
+.deliveries .delivery-accept i{
+    color:#22C55E;
+    font-size:6px;
+    padding-right: 8px;
+}
+
+.deliveries .order-cards .card .left .price{
+    font-size: var(--text-lg);
+    color:#161616;
+    font-weight: 600;
+}
+.deliveries .order-cards .card .left .date{
+    color:#949494;
+    font-size: 12px;
+    font-weight: 500;
+}
+.deliveries .order-cards .card .tag{
+    font-size:10px;
+    padding:8px;
+    border-radius: 15px;
+    background-color: #FFF5F1;
+    font-weight: 500;
+    line-height: 100%;
+}
+.deliveries .order-cards .card .loc-img{
+    width:16px;
+    height:16px;
+}
+.deliveries .order-cards .card hr{
+    border-bottom:.5px solid #E4E4E4
+}
