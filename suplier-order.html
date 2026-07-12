@@ -79,21 +79,29 @@
       <!-- header -->
       <div class = "d-flex justify-content-between align-items-center px-4 bg-white">
         <h1 class = "title">Marketplace</h1>
-        <ul class="right-menu d-flex align-items-center gap-3">
+        <ul class="right-menu d-flex align-items-center gap-3 px-4 py-3">
             <li><img src="assets/images/icone/repeat.png" alt=""></li>
             <li class = "notifi"><img src="assets/images/icone/Notification.png" alt="" >
                 <span class="number">2</span>
             </li>
             <li class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="assets/images/icone/user.png" alt="" />
-                 
+                    <img src="assets/images/icone/user.png" alt="User" />
+                    <i class="fa-solid fa-caret-down ms-1 text-dark" aria-hidden="true"></i>
                 </button>
-               <img src="assets/images/icone/arrow-down.svg" alt="">
-                <ul class="dropdown-menu">
-                    <li><button class="dropdown-item" type="button">Action</button></li>
-                    <li><button class="dropdown-item" type="button">Another action</button></li>
-                    <li><button class="dropdown-item" type="button">Something else here</button></li>
+
+                <ul class="dropdown-menu dropdown-menu-end user-dropdown">
+                    <li class = "text-center py-2">
+                      <a class="dropdown-item">
+                        <img src="assets/images/icone/user.png" alt="" class ="me-2 profile-img">
+                        MY Profile</a>
+                    </li>
+                     <li class = "border-0 logout text-center"> 
+                       <a href="" style="color:#FF6C52;">
+                        <img src="assets/images/icone/logout.png" alt="" class = "me-3">
+                        Logout 
+                      </a>
+                      </li>
                 </ul>
                
             </li>
