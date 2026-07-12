@@ -3622,3 +3622,8 @@ font-weight: 400;
     font-weight: 600;
 }
 }
+/* accepted orders */
+.acceptedOrder .deliverybtn{
+    border-radius: var(--radius-sm);
+    font-size: var(--text-medium);
+}
