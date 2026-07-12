@@ -2428,6 +2428,7 @@ flatpickr-day.selected,
     border-radius: 16px;
     border-top-right-radius: 0;
     padding:16px;
+    font-weight: 500;
 
 }
 .user-dropdown li{
@@ -3666,4 +3667,39 @@ font-weight: 400;
 }
 .deliveries .order-cards .card hr{
     border-bottom:.5px solid #E4E4E4
+}
+/* header right drop down menu  */
+.user-dropdown li a .profile-img{
+    width:42.5px;
+    height: 42.5px;
+    border-radius: 28px;
+    
+}
+/* suplier profile */
+.dashboardContent .profile-form{
+    background-color: #fff;
+    border:1px solid #E4E4E4;
+    border-radius: var(--radius-sm);
+    padding:24px 16px;
+    padding-bottom: 104px;
+}
+.dashboardContent .profile-form .title{
+    font-size: var(--text-lg);
+    color:#2F2F2F;
+    font-weight: 400;
+}
+.profile-form form input{
+    border:1px solid #F4F4F4;
+    background-color: #FAFAFA;
+    padding:13px;
+    font-size: var(--text-sm);
+}
+.profile-form form input::placeholder{
+    color:#8E8E93;
+    font-size: var(--text-sm);
+}
+.profile-form form label{
+color:#362E2E;
+font-size: var(--text-sm);
+font-weight: 400;
 }
