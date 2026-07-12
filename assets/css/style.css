@@ -3543,3 +3543,82 @@ font-weight: 400;
     align-items: center;
     justify-content: center;
 }
+/* suplier offers */
+.my-offers .greeting .live{
+    color: #949494;
+    font-size: var(--text-sm);
+    font-weight: 400;
+}
+.my-offers .greeting .live i{
+    color: #22C55E;
+    font-size: 12px;
+    padding-right: 5px;
+}
+/* .my-offers .counter {
+    background-color: ;
+} */
+.my-offers .counter div{
+    flex:1 1 calc((100% - 32px) / 3);
+    width:calc((100% - 32px) / 3);
+    background-color: #fff;
+    border-radius: 8px;
+    border:1px solid #FAFAFA;
+    padding: 24px 0;
+}
+
+.my-offers .counter div span{
+    color:#949494;
+    font-size: var(--text-sm);
+    font-weight: 500;
+}
+.my-offers .counter div h1{
+   font-size:var(--display-xs);
+    font-weight: 600;
+}
+.my-offers .counter div .price-counter{
+ color: #161616;
+}
+.my-offers .counter div .rate-counter{
+    color: #F97316;
+  
+}
+.my-offers .counter div .active-counter{
+    color: #22C55E;
+  
+}
+.my-offers .order-cards .card .right .tag .accept{
+    padding:8px;
+    width:unset
+}
+.my-offers .order-cards .card .right .tag .rejected{
+     padding:8px;
+    width:unset;
+    background-color: #F044381A;
+    color:#F04438
+
+
+}
+.my-offers .order-cards .card .right .tag .rejected i{
+    color:#F04438
+}
+.my-offers .order-cards .card .right .tag .pending{
+     padding:8px;
+    width:unset;
+    background-color: #FFCC001A;
+    color:#FFCC00
+
+
+}
+.my-offers .order-cards .card .right .tag .pending i{
+    color:#FFCC00
+}
+@media (max-width: 575px) {
+    .my-offers .counter div{
+        flex:1 1 calc((100% - 32px) / 2);
+         width:calc((100% - 32px) / 2);
+    }
+    .my-offers .counter div h1{
+   font-size:var(--text-lg);
+    font-weight: 600;
+}
+}
